@@ -1,0 +1,14 @@
+#img-logo-header {
+    width: calc(63 / 1920 * 100vw);
+    height: 67px;
+    object-fit: contain;
+}
+#text-logo-header {
+    width: calc(200 / 1920 * 100vw);
+    height: 27px;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: calc(150 / 1920 * 100vw);
+}

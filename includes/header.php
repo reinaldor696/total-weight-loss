@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/fonts/styles.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-gsap.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- End CSS Files Includes !-->
 </head>
@@ -29,13 +30,19 @@
             <div class="row">
                 <!-- Navigation !-->
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.php"><img src="assets/images/logo.webp" class="img-fluid" alt="Logo" /></a>
+
+                    <a class="navbar-brand" href="index.php">
+                        <img src="assets/images/newlogo 1.png" class="img-fluid" id="img-logo-header" alt="Logo" />
+                        <img src="assets/images/newlogo 2.png" class="img-fluid" id="text-logo-header" alt="Logo" />
+                    </a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <img class="img-fluid toogleimg" src="assets/images/toggle.webp" alt="image" />
                     </button>
+
                     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
 
-                        <ul class="navbar-nav mobileNavBar">
+                        <ul id='navbar-header' class="navbar-nav mobileNavBar">
                             <li class="nav-item mobilelogo">
                                 <a class="nav-link" href="index.php"><img class="img-fluid" src="assets/images/m-logo.webp" alt="Mobile Logo" /></a>
                             </li>
@@ -77,3 +84,34 @@
 
     </header>
     <!-- End Header !-->
+
+    <!--=============== Scripts GSAP ===============-->
+    <script src='librarys/gsap/gsap.min.js'></script>
+    <script src='librarys/gsap/CSSRulePlugin.min.js'></script>
+    <script src='librarys/gsap/CustomBounce.min.js'></script>
+    <script src='librarys/gsap/CustomEase.min.js'></script>
+    <script src='librarys/gsap/CustomWiggle.min.js'></script>
+    <script src='librarys/gsap/Draggable.min.js'></script>
+    <script src='librarys/gsap/DrawSVGPlugin.min.js'></script>
+    <script src='librarys/gsap/EaselPlugin.min.js'></script>
+    <script src='librarys/gsap/EasePack.min.js'></script>
+    <script src='librarys/gsap/Flip.min.js'></script>
+    <script src='librarys/gsap/GSDevTools.min.js'></script>
+    <script src='librarys/gsap/InertiaPlugin.min.js'></script>
+    <script src='librarys/gsap/MorphSVGPlugin.min.js'></script>
+    <script src='librarys/gsap/MotionPathHelper.min.js'></script>
+    <script src='librarys/gsap/MotionPathPlugin.min.js'></script>
+    <script src='librarys/gsap/Observer.min.js'></script>
+    <script src='librarys/gsap/Physics2DPlugin.min.js'></script>
+    <script src='librarys/gsap/PhysicsPropsPlugin.min.js'></script>
+    <script src='librarys/gsap/PixiPlugin.min.js'></script>
+    <script src='librarys/gsap/ScrambleTextPlugin.min.js'></script>
+    <script src='librarys/gsap/ScrollSmoother.min.js'></script>
+    <script src='librarys/gsap/ScrollToPlugin.min.js'></script>
+    <script src='librarys/gsap/ScrollTrigger.min.js'></script>
+    <script src='librarys/gsap/SplitText.min.js'></script>
+    <script src='librarys/gsap/TextPlugin.min.js'></script>
+    
+    <!--=============== Main JS ===============-->
+    <script src="assets/js/header-animation.js"></script>
+</body>
