@@ -7,7 +7,9 @@ $title = "Home";
    <div class="container-fluid px-5">
       <div class="row">
          <div class="banner-captions">
-            <h1 class="banner-heading">Turning SIMPLE<br /><span>RECIPES into RESULTS</span></h1>
+            <h1 class="banner-heading">Turning SIMPLE</h1>
+            <br />
+            <h2 class="banner-heading">RECIPES into RESULTS</h2>
             <div class="col-lg-4">
                <div class="banner-text">
                   <p>Crafted to perfection, making weight loss easy for you.</p>
@@ -18,8 +20,8 @@ $title = "Home";
             </div>
             <div class="col-lg-8"></div>
             <div class="banner-images">
-               <img src="assets/images/banner-img-1.webp" class="img-fluid banner-1" alt="Book Cover" />
-               <img src="assets/images/banner-img-2.webp" class="img-fluid banner-2" alt="Mobile" />
+               <img id="book-cover" src="assets/images/banner-img-1.webp" class="img-fluid banner-1" alt="Book Cover" />
+               <img id="mobile" src="assets/images/banner-img-2.webp" class="img-fluid banner-2" alt="Mobile" />
             </div>
             <div class="scroll-down">
                <a href="#">

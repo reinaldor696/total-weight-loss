@@ -12,3 +12,16 @@
 h1 {
     font-size: calc(150 / 1920 * 100vw);
 }
+
+h2.banner-heading {
+    text-align: center;
+    font-size: calc(150 / 1920 * 100vw);
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.banner-text p {
+    opacity: 0;
+}
