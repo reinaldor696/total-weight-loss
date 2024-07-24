@@ -84,34 +84,3 @@
 
     </header>
     <!-- End Header !-->
-
-    <!--=============== Scripts GSAP ===============-->
-    <script src='librarys/gsap/gsap.min.js'></script>
-    <script src='librarys/gsap/CSSRulePlugin.min.js'></script>
-    <script src='librarys/gsap/CustomBounce.min.js'></script>
-    <script src='librarys/gsap/CustomEase.min.js'></script>
-    <script src='librarys/gsap/CustomWiggle.min.js'></script>
-    <script src='librarys/gsap/Draggable.min.js'></script>
-    <script src='librarys/gsap/DrawSVGPlugin.min.js'></script>
-    <script src='librarys/gsap/EaselPlugin.min.js'></script>
-    <script src='librarys/gsap/EasePack.min.js'></script>
-    <script src='librarys/gsap/Flip.min.js'></script>
-    <script src='librarys/gsap/GSDevTools.min.js'></script>
-    <script src='librarys/gsap/InertiaPlugin.min.js'></script>
-    <script src='librarys/gsap/MorphSVGPlugin.min.js'></script>
-    <script src='librarys/gsap/MotionPathHelper.min.js'></script>
-    <script src='librarys/gsap/MotionPathPlugin.min.js'></script>
-    <script src='librarys/gsap/Observer.min.js'></script>
-    <script src='librarys/gsap/Physics2DPlugin.min.js'></script>
-    <script src='librarys/gsap/PhysicsPropsPlugin.min.js'></script>
-    <script src='librarys/gsap/PixiPlugin.min.js'></script>
-    <script src='librarys/gsap/ScrambleTextPlugin.min.js'></script>
-    <script src='librarys/gsap/ScrollSmoother.min.js'></script>
-    <script src='librarys/gsap/ScrollToPlugin.min.js'></script>
-    <script src='librarys/gsap/ScrollTrigger.min.js'></script>
-    <script src='librarys/gsap/SplitText.min.js'></script>
-    <script src='librarys/gsap/TextPlugin.min.js'></script>
-    
-    <!--=============== Main JS ===============-->
-    <script src="assets/js/header-animation.js"></script>
-</body>
