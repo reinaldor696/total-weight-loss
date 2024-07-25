@@ -41,20 +41,32 @@ function initScroll() {
         scrollTrigger: { 
             trigger: '.scroll-down',
             start: 'top 350',
-            end: '1100 350',
+            end: '2350 350',
             scrub: true,
+            pin: true
         }
+    });
+
+     // Scroll Down Book Cover Image
+    tl.to('.scroll-down', {
+        keyframes:{
+            "0%":{ opacity: 1 },
+            "30%":{ opacity: 1 },
+            "50%":{ opacity: 0 },
+            "100%":{ opacity: 0 },
+        },
+        duration: 5 
     });
 
     // Scroll Down Book Cover Image
     tl.to('#book-cover', {
         keyframes:{
-            "0%":{yPercent:0, xPercent:0, scale: 1, rotation: 0, },
+            "0%":{ yPercent:0, xPercent:0, scale: 1, rotation: 0, },
             "90%":{ yPercent: 140, xPercent: 25, scale: 0.8, rotation: 0, },
-            "100%":{ rotation: 35, transformOrigin:"80% 80%" }
+            "100%":{ rotation: 35, transformOrigin:"80% 80%" },
         },
-        duration: 4 
-    });
+        duration: 5 
+    }, 0);
 
     // Scroll Down Mobile Image
     tl.to('#mobile', { 
@@ -64,7 +76,7 @@ function initScroll() {
             "50%":{ opacity: 0 },
             "100%":{ yPercent: 210,  opacity: 0 },
         },
-        duration: 3 
+        duration: 4 
     }, 0);
 
     // Scroll Down Book List Container
@@ -74,7 +86,18 @@ function initScroll() {
             "85%":{ opacity: 0 },
             "100%":{ yPercent: -20,  opacity: 1 },
         },
-        duration: 4 
+        duration: 5 
     }, 0);
+
+    // A keyfame with different direction
+    tl.from('.mobile-img', { 
+        keyframes:{
+            "0%":{ yPercent: -250, xPercent: 190, opacity: 0, rotation: 25 },
+            "50%":{ opacity: 1, rotation: 25 },
+            "100%":{ yPercent: 0, xPercent: 0, rotation: 0 , opacity: 1 },
+        },
+        duration: 5 
+    });
+
 }
 initScroll();
