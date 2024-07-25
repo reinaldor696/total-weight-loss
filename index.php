@@ -51,7 +51,7 @@ $title = "Home";
             <hr />
          </div>
          <div class="intro-wrap row">
-            <div class="col-lg-4">
+            <div id="book-list-container" class="col-lg-4">
                <div class="boo-lists">
                   <ul>
                      <li>250+ macro friendly breakfast, lunch, dinner, and snack recipes crafted to maximize your weight loss.</li>
@@ -65,13 +65,7 @@ $title = "Home";
                   </div>
                </div>
             </div>
-            <div class="col-lg-8">
-               <div class="intro-img">
-                  <img src="assets/images/int-img.webp" class="img-fluid bookintro" alt="Book Intro" />
-               </div>
-            </div>
          </div>
-
       </div>
    </div>
 </section>
