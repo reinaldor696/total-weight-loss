@@ -35,3 +35,35 @@ function initAnimation() {
 window.onload = function() {
     initAnimation();
 };
+
+function initScroll() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: '.scroll-down',
+            start: 'top 350',
+            end: '1100 350',
+            scrub: true,
+        }
+    });
+
+    // Scroll Down Book Cover Image
+    tl.to('#book-cover', {
+        keyframes:{
+            "0%":{yPercent:0, xPercent:0, scale: 1 },
+            "90%":{ yPercent: 140, xPercente: 25, scale: 0.8, rotation: 0, },
+            "100%":{ rotation: 35, transformOrigin:"80% 80%" }
+        },
+        duration: 4 
+    });
+
+    // Scroll Down Mobile Image
+    tl.to('#mobile', { 
+        keyframes:{
+            "0%":{ yPercent:0, xPercent:0, scale: 1 },
+            "40%":{ yPercent: 60, xPercent: -70, scale: 0.7 },
+            "100%":{ yPercent: 210 },
+        },
+        duration: 3 
+    }, 0);
+}
+initScroll();
