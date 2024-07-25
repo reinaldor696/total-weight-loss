@@ -41,7 +41,7 @@ function initScroll() {
         scrollTrigger: { 
             trigger: '.scroll-down',
             start: 'top 350',
-            end: '2350 350',
+            end: '3000 350',
             scrub: true,
             pin: true
         }
@@ -89,7 +89,7 @@ function initScroll() {
         duration: 5 
     }, 0);
 
-    // A keyfame with different direction
+    // A mobile keyfame with different direction
     tl.from('.mobile-img', { 
         keyframes:{
             "0%":{ yPercent: -250, xPercent: 190, opacity: 0, rotation: 25 },
@@ -99,5 +99,10 @@ function initScroll() {
         duration: 5 
     });
 
+    // Scroll Down list mobile content
+    tl.fromTo('.lists-mobile li', { yPercent: 50, opacity: 0 }, { yPercent: 0, opacity: 1, stagger: 0.1, delay: 0.5 });
+
+    //  Mobile Rotation
+    tl.fromTo('.mobile-img', { rotation: 0 }, { rotation: 35, duration: 1, delay: 0.5 });
 }
 initScroll();

@@ -26,7 +26,18 @@ h2.banner-heading {
     opacity: 0;
 }
 
-#book-cover {
-    will-change: transform;
-    transform: rotate(0deg);
+.mobile-img {
+    opacity: 0
+}
+
+.our-clients {
+    background: #001569;
+    padding: 0;
+    border-radius: 50%;
+    scale: 0.2;
+    overflow: hidden;
+}
+
+.clinets-center {
+    transform: translate(0, 135%);
 }
