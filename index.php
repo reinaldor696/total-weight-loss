@@ -140,12 +140,15 @@ $title = "Home";
                               <div class="test-images">
                                  <ul>
                                     <li><img class="test-small-img img-fluid" src="assets/images/test-small-1.webp" alt="image"></li>
-                                    <li><img class="test-big-img img-fluid" src="assets/images/test-big-1.webp" alt="image"></li>
+                                    <li><img id="testimonial-image" class="test-big-img img-fluid" src="assets/images/test-big-1.webp" alt="image"></li>
                                  </ul>
                               </div>
                               <div class="test-uptext">
-                                 <h6>01/03</h6>
-                                 <p class="reiws">Reviews</p>
+                                 <div class="test-date-img">
+                                    <h6 id="dat-days-animat">01</h6><h6>/03</h6>
+                                 </div>
+                                 
+                                 <p id="text-review-animat" class="reiws">Reviews</p>
                               </div>
                            </div>
                         </div>

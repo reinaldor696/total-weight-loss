@@ -53,3 +53,9 @@ h2.get-clients {
     border: none;
     visibility: hidden;
 }
+
+.test-date-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

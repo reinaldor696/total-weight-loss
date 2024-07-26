@@ -154,6 +154,38 @@ function ourClientGetResultAnimation() {
     }, "<");
 
     // wrapped Container circle animation
-    tl.to(".clinets-center", { scale: 1.5, ease: "power2.inOut"});
+    tl.to(".clinets-center", { scale: 1.7, ease: "power2.inOut"});
 }
 ourClientGetResultAnimation();
+
+// Testimonials Animation
+function testimonialsAnimation() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: '.testimonial-sec',
+            start: 'top 300',
+            end: 'top 300',
+            markers: true
+        },
+        ease: "expo",
+        duration: 1
+    });
+
+    // Testimonial Image
+    tl.fromTo('#testimonial-image',
+    { 
+        scaleX: 0.5, 
+        scaleY:0.7, 
+        transformOrigin: "bottom right" 
+    }, 
+    { 
+        scaleX: 1,
+        scaleY: 1, 
+        transformOrigin: "bottom right" 
+    });
+
+    tl.from('#dat-days-animat', { yPercent: 400  }, "<");
+
+    tl.from('#text-review-animat', { yPercent: 300 }, "<");
+}
+testimonialsAnimation();
