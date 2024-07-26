@@ -27,7 +27,8 @@ h2.banner-heading {
 }
 
 .mobile-img {
-    opacity: 0
+    opacity: 0;
+    visibility: hidden;
 }
 
 .our-clients {
@@ -38,6 +39,17 @@ h2.banner-heading {
     overflow: hidden;
 }
 
-.clinets-center {
-    transform: translate(0, 135%);
+.clinets-center{
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    border: 30px solid white;
+    position: relative; 
+    visibility: hidden;
+}
+
+h2.get-clients {
+    position: absolute;
+    border: none;
+    visibility: hidden;
 }

@@ -117,9 +117,8 @@ $title = "Home";
 <section class="our-clients">
    <div class="container-fluid px-5">
       <div class="row">
-         <div class="clinets-center">
-            <h2 class="get-clients">our clients get results</h2>
-         </div>
+         <h2 class="get-clients">our clients get results</h2>
+         <div class="clinets-center"></div>
       </div>
    </div>
 </section>

@@ -1,4 +1,4 @@
-//
+// Init Animation On Load
 function initAnimation() {
     const tl = gsap.timeline({ defaults: { duration: 2, ease: "expo.out" } });
     
@@ -36,6 +36,7 @@ window.onload = function() {
     initAnimation();
 };
 
+// Init Scroll Animation
 function initScroll() {
     const tl = gsap.timeline({ 
         scrollTrigger: { 
@@ -92,7 +93,7 @@ function initScroll() {
     // A mobile keyfame with different direction
     tl.from('.mobile-img', { 
         keyframes:{
-            "0%":{ yPercent: -250, xPercent: 190, opacity: 0, rotation: 25 },
+            "0%":{ yPercent: -250, xPercent: 190, opacity: 0, rotation: 25, visibility: "visible" },
             "50%":{ opacity: 1, rotation: 25 },
             "100%":{ yPercent: 0, xPercent: 0, rotation: 0 , opacity: 1 },
         },
@@ -106,3 +107,53 @@ function initScroll() {
     tl.fromTo('.mobile-img', { rotation: 0 }, { rotation: 35, duration: 1, delay: 0.5 });
 }
 initScroll();
+
+// Our Clients Get Result Animation
+function ourClientGetResultAnimation() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: '.our-clients',
+            start: 'center center',
+            end: 'bottom center',
+            scrub: true,
+            pin: true,
+        }
+    });
+
+    // Our Clients Container
+    tl.to(".our-clients", {
+        keyframes:{
+            "0%":{ scale: 0.2, yPorcent: 300 },
+            "50%":{ yPorcent: 0, scale: 0.2 },
+            "90%":{ borderRadius: '50%' },
+            "100%":{ opacity: 1, yPorcent: 0, scale: 1, borderRadius: '0%' },
+        },
+        duration: 2
+    });
+
+    // wrapped Container
+    tl.to(".clinets-center", {
+        keyframes:{
+            "0%":{ yPercent: 135, visibility: "visible" },
+            "50%":{ yPercent: 0 },
+            "60%":{ scale: 0.5 },
+            "100%":{ scale: 1 },
+        },
+        duration: 2
+    }, "-=1.5");
+
+    // Text Our Clients
+    tl.to(".get-clients", {
+        keyframes:{
+            "0%":{ yPercent: 135, visibility: "visible" },
+            "50%":{ yPercent: 0 },
+            "60%":{ scale: 0.5 },
+            "100%":{ scale: 1 },
+        },
+        duration: 2
+    }, "<");
+
+    // wrapped Container circle animation
+    tl.to(".clinets-center", { scale: 1.5, ease: "power2.inOut"});
+}
+ourClientGetResultAnimation();
