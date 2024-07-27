@@ -43,7 +43,7 @@ function initScroll() {
             trigger: '.scroll-down',
             start: 'top 350',
             end: '3000 350',
-            scrub: true,
+            scrub: 2,
             pin: true
         }
     });
@@ -115,7 +115,7 @@ function ourClientGetResultAnimation() {
             trigger: '.our-clients',
             start: 'center center',
             end: 'bottom center',
-            scrub: true,
+            scrub: 2,
             pin: true,
         }
     });
@@ -165,10 +165,8 @@ function testimonialsAnimation() {
             trigger: '.testimonial-sec',
             start: 'top 300',
             end: 'top 300',
-            markers: true
         },
-        ease: "expo",
-        duration: 1
+        ease: "expo"
     });
 
     // Testimonial Image

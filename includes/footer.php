@@ -96,6 +96,7 @@
 
 <!--=============== Header Animation JS ===============-->
 <script src="assets/js/animation.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 

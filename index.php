@@ -139,13 +139,14 @@ $title = "Home";
                            <div class="test-left">
                               <div class="test-images">
                                  <ul>
-                                    <li><img class="test-small-img img-fluid" src="assets/images/test-small-1.webp" alt="image"></li>
-                                    <li><img id="testimonial-image" class="test-big-img img-fluid" src="assets/images/test-big-1.webp" alt="image"></li>
+                                    <li><img id="prev-img-testimonial2" class="test-small-img img-fluid" src="" alt="image"></li>
+                                    <li><img id="prev-img-testimonial" class="test-small-img img-fluid" src="" alt="image"></li>
+                                    <li><img id="testimonial-image" class="test-big-img img-fluid" src="" alt="image"></li>
                                  </ul>
                               </div>
                               <div class="test-uptext">
                                  <div class="test-date-img">
-                                    <h6 id="dat-days-animat">01</h6><h6>/03</h6>
+                                    <h6 id="dat-days-animat"></h6><h6>/03</h6>
                                  </div>
                                  
                                  <p id="text-review-animat" class="reiws">Reviews</p>
@@ -155,85 +156,18 @@ $title = "Home";
                         <div class="col-lg-6 prelative">
                            <div class="test-right">
                               <div class="top-text">
-                                 <h6>Emily Bonnevelle</h6>
-                                 <p>“In only 3 weeks I have lost 10 pounds. I purchased the E-book and would highly recommend to everyone who asks.”</p>
+                                 <h6 id="testimonial-name"></h6>
+                                 <p id="testimonial-text"></p>
                               </div>
                               <div class="bottom-text">
-                                 <h5>-76lbs</h5>
-                                 <p>8 months</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                                 <h5 id="test-weight"></h5>
+                                 <p id="test-months"></p>
+                              </div>                         
+                              <svg id="next-img-btn" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="30" cy="30" r="29" fill="#23A9F4" stroke="#23A9F4"/>
+                                 <path d="M26.3331 40C26.0694 39.9999 25.8117 39.9265 25.5925 39.7891C25.3732 39.6516 25.2024 39.4563 25.1015 39.2277C25.0006 38.9992 24.9742 38.7477 25.0256 38.5051C25.077 38.2624 25.204 38.0396 25.3904 37.8646L33.7815 29.9923L25.3904 22.12C25.1475 21.8841 25.0131 21.5681 25.0162 21.2401C25.0192 20.9121 25.1594 20.5983 25.4066 20.3664C25.6539 20.1345 25.9883 20.0029 26.3379 20C26.6875 19.9972 27.0243 20.1233 27.2758 20.3512L36.6096 29.1079C36.8596 29.3425 37 29.6606 37 29.9923C37 30.324 36.8596 30.6422 36.6096 30.8767L27.2758 39.6335C27.0258 39.8681 26.6867 39.9999 26.3331 40Z" fill="white"/>
+                              </svg>
 
-
-                  </div>
-               </div>
-
-               <div>
-                  <div class="test-item">
-
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <div class="test-left">
-                              <div class="test-images">
-                                 <ul>
-                                    <li><img class="test-small-img img-fluid" src="assets/images/test-small-2.webp" alt="image"></li>
-                                    <li><img class="test-big-img img-fluid" src="assets/images/test-big-2.webp" alt="image"></li>
-                                 </ul>
-                              </div>
-                              <div class="test-uptext">
-                                 <h6>02/03</h6>
-                                 <p class="reiws">Reviews</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 prelative">
-                           <div class="test-right">
-                              <div class="top-text">
-                                 <h6>David Pennington</h6>
-                                 <p>“I know its only been a week...but i wanted to share that i see a visible difference already in how I look and feel!”</p>
-                              </div>
-                              <div class="bottom-text">
-                                 <h5>-35 lbs</h5>
-                                 <p>4 months</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-
-                  </div>
-               </div>
-
-               <div>
-                  <div class="test-item">
-
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <div class="test-left">
-                              <div class="test-images">
-                                 <ul>
-                                    <li><img class="test-small-img img-fluid" src="assets/images/test-small-3.webp" alt="image"></li>
-                                    <li><img class="test-big-img img-fluid" src="assets/images/test-big-3.webp" alt="image"></li>
-                                 </ul>
-                              </div>
-                              <div class="test-uptext">
-                                 <h6>03/03</h6>
-                                 <p class="reiws">Reviews</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 prelative">
-                           <div class="test-right">
-                              <div class="top-text">
-                                 <h6>John Birdwhistle</h6>
-                                 <p>“Easiest diet I have ever been on and believe me, I’ve tried them all. So glad it’s good for me!”</p>
-                              </div>
-                              <div class="bottom-text">
-                                 <h5>-50 lbs</h5>
-                                 <p>5 months</p>
-                              </div>
                            </div>
                         </div>
                      </div>
