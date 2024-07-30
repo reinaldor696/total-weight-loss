@@ -64,7 +64,7 @@ function initScroll() {
         keyframes:{
             "0%":{ yPercent:0, xPercent:0, scale: 1, rotation: 0, },
             "90%":{ yPercent: 140, xPercent: 25, scale: 0.8, rotation: 0, },
-            "100%":{ rotation: 35, transformOrigin:"80% 80%" },
+            "100%":{ rotation: 20, transformOrigin:"80% 80%" },
         },
         duration: 5 
     }, 0);
@@ -187,3 +187,58 @@ function testimonialsAnimation() {
     tl.from('#text-review-animat', { yPercent: 300 }, "<");
 }
 testimonialsAnimation();
+
+// Ceo Section Animation
+function ceoSectionAnimation() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: '.ceo-sec',
+            start: 'top center',
+            end: '900 center',
+            scrub: true
+        },
+    });
+
+    // CEO Image
+    tl.from('.ceo-img', {
+        keyframes: {
+            "0%": { scale: 0.5 },
+            "100%": { scale: 1, transformOrigin: "bottom" }
+        },  
+        duration: 2, 
+    });
+
+    // CEO Testimonial Text And image
+    tl.to('.ceo-text, .ceo-img', {
+        keyframes: {
+            "0%": { y: 0, opacity: 1 },
+            "100%": { y: -200, opacity: 0 }
+        },
+        duration: 1,
+        delay: 1
+    });
+
+    // CEO Johnny Image Name
+    tl.to('.ceojohnny', { 
+        marginTop: "-750px",
+        duration: 1,
+    });
+
+    // Clients Logos Section
+    tl.to('#clientes-sec-logos', {
+        keyframes: {
+            "0%": { 
+                yPercent: 100, 
+                opacity: 0, 
+                visibility: "hidden" 
+            },
+            "50%": { 
+                yPercent: 0, 
+                opacity: 1, 
+                visibility: "visible" 
+            }
+        }, 
+        duration: 2,
+    }, "<");
+}
+ceoSectionAnimation();

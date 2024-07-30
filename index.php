@@ -44,7 +44,7 @@ $title = "Home";
          <div class="content">&nbsp;Lose <span style="color: #D9DDEC;">Weight</span>, Eat <span style="color: #D9DDEC;">great!</span> Lose <span style="color: #D9DDEC;">Weight</span>, Eat <span style="color: #D9DDEC;">great!</span> Lose <span style="color: #D9DDEC;">Weight</span>, Eat great!</div>
       </div>
    </div>
-   <div class="container-fluid px-5">
+   <div id="overflow-book-intro" class="container-fluid px-5">
       <div class="row">
          <div class="book-intro-top">
             <h6>OVER 200 WEIGHT LOSS OPTIONS!</h6>
@@ -225,7 +225,7 @@ $title = "Home";
 <!-- End CEO Johny !-->
 <!-- Clients Section !-->
 <section class="clients-sec">
-   <div class="container-fluid px-5">
+   <div id="clientes-sec-logos" class="container-fluid px-5">
       <div class="row cl-wrape">
          <div class="col-lg-3 col-sm-6 col-xs-6">
             <div class="clients-box">

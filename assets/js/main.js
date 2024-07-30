@@ -56,12 +56,8 @@ function updateImg() {
     let prevIndex = (currentIndex + 1) % testimonialImg.length;
     prevImgTestimonial.src = testimonialImg[prevIndex].img;
 
-    let prevIndex2 = (currentIndex - 1) % testimonialImg.length;
+    let prevIndex2 = (currentIndex + 2) % testimonialImg.length;
     prevImgTestimonial2.src = testimonialImg[prevIndex2].img;
-
-    if(currentIndex < 0) {
-        currentIndex = 2;
-    }
 }
 
 function animateTransitionBefore() {
@@ -76,8 +72,6 @@ function animateTransitionBefore() {
         duration: 0.5,
         ease: "expo.in"
     });
-
-    tl.to(prevImgTestimonial, { visibility : "hidden" }, 0);
 }
 
 function animateTransitionAfter() {
