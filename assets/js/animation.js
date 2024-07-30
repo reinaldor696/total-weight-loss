@@ -172,13 +172,11 @@ function testimonialsAnimation() {
     // Testimonial Image
     tl.fromTo('#testimonial-image',
     { 
-        scaleX: 0.5, 
-        scaleY:0.7, 
+        scale: 0.7, 
         transformOrigin: "bottom right" 
     }, 
     { 
-        scaleX: 1,
-        scaleY: 1, 
+        scale: 1.6,
         transformOrigin: "bottom right" 
     });
 

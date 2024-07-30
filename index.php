@@ -132,10 +132,10 @@ $title = "Home";
             <div class="testi-carousal">
 
                <div>
-                  <div class="test-item">
+                  <div class="test-item test-item-cont">
 
                      <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 img-carrusel-container">
                            <div class="test-left">
                               <div class="test-images">
                                  <ul>

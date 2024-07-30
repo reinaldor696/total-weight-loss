@@ -95,9 +95,15 @@ h2.get-clients {
     border-bottom-right-radius: 0;
 }
 
-.ceo-img {
-    scale: 0.5;
-};
+.test-item-cont {
+    height: 280px;
+    display: flex;
+}
+
+.img-carrusel-container {
+    display: flex;
+    align-items: flex-end;
+}
 
 .clients-sec {
     background: linear-gradient(0deg, #001569 50%, #1C89D6 100%);
