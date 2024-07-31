@@ -139,9 +139,10 @@ $title = "Home";
                            <div class="test-left">
                               <div class="test-images">
                                  <div class="img-test-cont">
-                                    <img id="prev-img-testimonial2" class="" src="" alt="image">
-                                    <img id="prev-img-testimonial" class="" src="" alt="image">
-                                    <img id="testimonial-image" class="" src="" alt="image">
+                                       <div class="test-img-container" id="testimonial-image2"></div>
+                                       <img class="test-img-container" id="prev-img-testimonial2" class="" src="" alt="image">
+                                       <img class="test-img-container" id="prev-img-testimonial" class="" src="" alt="image">
+                                       <img class="test-img-container" id="testimonial-image" class="" src="" alt="image">
                                  </div>
                               </div>
                               <div class="test-uptext">

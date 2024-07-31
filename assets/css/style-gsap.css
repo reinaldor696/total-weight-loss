@@ -89,6 +89,7 @@ h2.get-clients {
     flex-direction: row;
     gap: calc(20 / 1920 * 100vw);
     align-items: flex-end;
+    overflow: hidden;
 }
 
 #prev-img-testimonial {
@@ -96,7 +97,7 @@ h2.get-clients {
     width: calc(270 / 1920 * 100vw);
 }
 
-#prev-img-testimonial2 {
+#prev-img-testimonial2, #testimonial-image2 {
     height: calc(311 / 1080 * 100vh);
     width: calc(270 / 1920 * 100vw);
 }
@@ -139,6 +140,7 @@ h2.get-clients {
     display: flex;
     align-items: flex-end;
     padding-left: 0;
+    overflow: hidden;
 }
 
 .clients-sec {
