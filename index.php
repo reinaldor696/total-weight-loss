@@ -116,7 +116,7 @@ $title = "Home";
 <!-- Our Clients !-->
 <section class="our-clients">
    <div class="container-fluid px-5">
-      <div class="row">
+      <div class="row our-clients-row-cont">
          <h2 class="get-clients">our clients get results</h2>
          <div class="clinets-center"></div>
       </div>
@@ -125,9 +125,9 @@ $title = "Home";
 <!-- End Our Clients !-->
 <!-- Testimonials !-->
 <section class="testimonial-sec">
-   <div class="container-fluid px-5">
-      <div class="row">
-         <div class="col-lg-12">
+   <div class="container-fluid px-5 test-sec-conta2">
+      <div class="row test-sec-conta2">
+         <div class="col-lg-12 test-sec-conta2">
 
             <div class="testi-carousal">
 
@@ -135,14 +135,14 @@ $title = "Home";
                   <div class="test-item test-item-cont">
 
                      <div class="row">
-                        <div class="col-lg-6 img-carrusel-container">
+                        <div class="col-lg-7 img-carrusel-container">
                            <div class="test-left">
                               <div class="test-images">
-                                 <ul>
-                                    <li><img id="prev-img-testimonial2" class="test-small-img img-fluid" src="" alt="image"></li>
-                                    <li><img id="prev-img-testimonial" class="test-small-img img-fluid" src="" alt="image"></li>
-                                    <li><img id="testimonial-image" class="test-big-img img-fluid" src="" alt="image"></li>
-                                 </ul>
+                                 <div class="img-test-cont">
+                                    <img id="prev-img-testimonial2" class="" src="" alt="image">
+                                    <img id="prev-img-testimonial" class="" src="" alt="image">
+                                    <img id="testimonial-image" class="" src="" alt="image">
+                                 </div>
                               </div>
                               <div class="test-uptext">
                                  <div class="test-date-img">
@@ -153,7 +153,7 @@ $title = "Home";
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-6 prelative">
+                        <div class="col-lg-5 prelative">
                            <div class="test-right">
                               <div class="top-text">
                                  <h6 id="testimonial-name"></h6>

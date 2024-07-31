@@ -47,6 +47,12 @@ h2.banner-heading {
     overflow: hidden;
 }
 
+.our-clients-row-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .clinets-center{
     width: 1300px;
     height: 1300px;
@@ -68,14 +74,36 @@ h2.get-clients {
     align-items: center;
 }
 
+.test-sec-conta2 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.test-left {
+    position: relative;
+    right: calc(200 / 1920 * 100vw);
+}
+
+.img-test-cont {
+    display: flex;
+    flex-direction: row;
+    gap: calc(20 / 1920 * 100vw);
+    align-items: flex-end;
+}
+
 #prev-img-testimonial {
-    scale: 0.5;
-    transform-origin: bottom left;
+    height: calc(311 / 1080 * 100vh);
+    width: calc(270 / 1920 * 100vw);
 }
 
 #prev-img-testimonial2 {
-    scale: 0.5;
-    transform-origin: bottom left;
+    height: calc(311 / 1080 * 100vh);
+    width: calc(270 / 1920 * 100vw);
+}
+
+#testimonial-image {
+    height: calc(796 / 1080 * 100vh);
+    width: calc(670 / 1920 * 100vw);
 }
 
 #next-img-btn {
@@ -86,8 +114,15 @@ h2.get-clients {
     height: calc(58 / 1920 * 100vw);
 }
 
+.test-uptext {
+    position: absolute;
+    top: calc(180 / 1080 * 100vh) !important;
+    right: calc(650 / 1920 * 100vw) !important;
+    left: unset !important;
+}
+
 .top-text {
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .ceo-sec {
@@ -96,13 +131,14 @@ h2.get-clients {
 }
 
 .test-item-cont {
-    height: 280px;
+    height: 500px;
     display: flex;
 }
 
 .img-carrusel-container {
     display: flex;
     align-items: flex-end;
+    padding-left: 0;
 }
 
 .clients-sec {
@@ -112,3 +148,4 @@ h2.get-clients {
 #clientes-sec-logos {
     visibility: hidden;
 }
+

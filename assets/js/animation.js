@@ -176,7 +176,7 @@ function testimonialsAnimation() {
         transformOrigin: "bottom right" 
     }, 
     { 
-        scale: 1.6,
+        scale: 1,
         transformOrigin: "bottom right" 
     });
 

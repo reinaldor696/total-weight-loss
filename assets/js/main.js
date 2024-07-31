@@ -84,7 +84,7 @@ function animateTransitionAfter() {
                 scale: 0.5,
                 xPercent: -150,
             }, {
-                scale: 1.6,
+                scale: 1.5,
                 xPercent: -30,
                 transformOrigin: "bottom",
                 duration: 1,
