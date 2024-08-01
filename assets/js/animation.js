@@ -216,12 +216,6 @@ function ceoSectionAnimation() {
         delay: 1
     });
 
-    // CEO Johnny Image Name
-    tl.to('.ceojohnny', { 
-        marginTop: "-750px",
-        duration: 1,
-    });
-
     // Clients Logos Section
     tl.to('#clientes-sec-logos', {
         keyframes: {
@@ -240,3 +234,22 @@ function ceoSectionAnimation() {
     }, "<");
 }
 ceoSectionAnimation();
+
+//FAQ Section Animation
+function faqSectionAnimation() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: '.faq-sec',
+            start: '0 center',
+            end: '0 center',
+        },
+        stagger: 1
+    });
+
+    // FAQ Section Title
+    tl.from('.faq-title, .accordion-item', { yPercent: 300 });
+
+    // Control Section
+    tl.from(".control-sec", { yPercent: 70 }, "<");
+}
+faqSectionAnimation();

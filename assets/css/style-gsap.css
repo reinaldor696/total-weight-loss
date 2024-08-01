@@ -151,3 +151,6 @@ h2.get-clients {
     visibility: hidden;
 }
 
+.controlwrap {
+    background: #021A6E !important;
+}
