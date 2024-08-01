@@ -330,6 +330,13 @@ $title = "Home";
             <div class="control-btn">
                <a href="#" class="white-border-btn">get your ebook <i class="fa-solid fa-arrow-right"></i></a>
             </div>
+
+            <img class="cover-book1-ctrl-sec" src="./assets/images/cover-book1.png" alt="image">
+            <img class="cover-book2-ctrl-sec" src="./assets/images/cover-book2.png" alt="image">
+            <img class="cover-book3-ctrl-sec" src="./assets/images/int-img.webp" alt="image">
+            <img class="cover-book4-ctrl-sec" src="./assets/images/cover-book4.png" alt="image">
+            <img class="cover-book5-ctrl-sec" src="./assets/images/cover-book5.png" alt="image">
+            <img class="cover-book6-ctrl-sec" src="./assets/images/cover-book6.png" alt="image">
          </div>
       </div>
    </div>
