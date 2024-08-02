@@ -243,13 +243,83 @@ function faqSectionAnimation() {
             start: '0 center',
             end: '0 center',
         },
-        stagger: 1
+        ease: "expo"
     });
 
     // FAQ Section Title
-    tl.from('.faq-title, .accordion-item', { yPercent: 300 });
+    tl.from('.faq-title, .accordion-item', { yPercent: 300, stagger: 0.05 });
 
     // Control Section
-    tl.from(".control-sec", { yPercent: 70 }, "<");
+    tl.from(".control-sec", { yPercent: 70 }, "-=0.5");
 }
 faqSectionAnimation();
+
+
+// Control Section Animation
+function controlSectionAnimation() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: '.control-sec',
+            start: '0 bottom',
+            end: 'bottom bottom',
+            scrub: true
+        },
+        ease: "expo"
+    });
+
+    // Control Section Title
+    tl.from('.cover-book1-ctrl-sec', {
+        keyframes:{
+            "0%":{ xPercent: -50, yPercent: 50  },
+            "50%":{ xPercent: 0, yPercent: 0 },
+            "100%":{ scale: 1.1, transformOrigin: "top right", xPercent: -20, yPercent: 20 },
+        },
+        duration: 2 
+    });
+
+    tl.to('.cover-book2-ctrl-sec', {
+        keyframes:{
+            "0%":{ rotation: 30, transformOrigin: "0 50%" },
+            "50%":{ rotation: 0 },
+            "100%":{ rotation: 60 },
+        },
+        duration: 2 
+    }, "-=2");
+
+    tl.to('.cover-book3-ctrl-sec', {
+        keyframes:{
+            "0%":{ rotation: -10 },
+            "50%":{ rotation: 10, transformOrigin: "50% 50%", scale: 1, yPercent: 0, xPercent: 0 },
+            "100%":{ rotation: 20, yPercent: -5, xPercent: 10 },
+        },
+        duration: 2 
+    }, "-=2");
+
+    tl.to('.cover-book4-ctrl-sec', {
+        keyframes:{
+            "0%":{ yPercent: 0, xPercent: 0 },
+            "50%":{ yPercent: -10, xPercent: 50 },
+            "100%":{ yPercent: 0, xPercent: 0},
+        },
+        duration: 2 
+    }, "-=2");
+
+    tl.to('.cover-book5-ctrl-sec', {
+        keyframes:{
+            "0%":{ rotation: -30 },
+            "50%":{ rotation: 10, transformOrigin: "50% 50%", scale: 1, yPercent: 0, xPercent: 0 },
+            "100%":{ rotation: 20, yPercent: -5, xPercent: 10, scale: 0.8 },
+        },
+        duration: 2 
+    }, "-=2");
+
+    tl.to('.cover-book6-ctrl-sec', {
+        keyframes:{
+            "0%":{ rotation: -10 },
+            "50%":{ rotation: 10, transformOrigin: "50% 50%", scale: 1, yPercent: 0, xPercent: 0 },
+            "100%":{ rotation: 20, yPercent: -15, xPercent: 15 },
+        },
+        duration: 2 
+    }, "-=2");
+}
+controlSectionAnimation();
