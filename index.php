@@ -115,10 +115,12 @@ $title = "Home";
 <!-- End Download Total !-->
 <!-- Our Clients !-->
 <section class="our-clients">
-   <div class="container-fluid px-5">
-      <div class="row our-clients-row-cont">
-         <h2 class="get-clients">our clients get results</h2>
-         <div class="clinets-center"></div>
+   <div class="our-clients-bag">
+      <div class="container-fluid px-5">
+         <div class="row our-clients-row-cont">
+            <h2 class="get-clients">our clients get results</h2>
+            <div class="clinets-center"></div>
+         </div>
       </div>
    </div>
 </section>

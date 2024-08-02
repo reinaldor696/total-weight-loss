@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style-gsap.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!--<link rel="stylesheet" href="./assets/css/responsive-gsap.css">-->
     <!-- End CSS Files Includes !-->
 </head>
 

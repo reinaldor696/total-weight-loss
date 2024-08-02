@@ -122,7 +122,7 @@ function ourClientGetResultAnimation() {
     });
 
     // Our Clients Container
-    tl.to(".our-clients", {
+    tl.to(".our-clients-bag", {
         keyframes:{
             "0%":{ scale: 0.2, yPorcent: 300 },
             "50%":{ yPorcent: 0, scale: 0.2 },

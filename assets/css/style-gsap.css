@@ -40,11 +40,28 @@ h2.banner-heading {
 }
 
 .our-clients {
-    background: #001569;
+    background-color: #F3F3F3;
     padding: 0;
+    overflow: hidden;
+    width: calc(1920 / 1920 * 100vw);
+    height: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.our-clients-bag {
+    background: #001569;
     border-radius: 50%;
     scale: 0.2;
     overflow: hidden;
+    height: 2800px !important;
+    width: 2800px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 .our-clients-row-cont {
