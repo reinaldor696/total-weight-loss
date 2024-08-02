@@ -5,11 +5,11 @@
 
       <div class="col-lg-6">
         <div class="footer-column fstclumn">
-          <img src="assets/images/logo-footer.webp" class="img-fluid" alt="Footer Logo" />
-          <p>Turning Simple Recipes Into Results…Crafted to perfection, making weight loss easy for you.</p>
+          <img src="assets/images/logo-footer.webp" class="img-fluid img-footer-logo" alt="Footer Logo" />
+          <p class="par-footer-logo">Turning Simple Recipes Into Results…Crafted to perfection, making weight loss easy for you.</p>
         </div>
       </div>
-      <div class="col-lg-2">
+      <div class="col-lg-2 col-footer-text">
         <div class="footer-column">
           <h6>shop</h6>
           <ul>
@@ -17,7 +17,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-2">
+      <div class="col-lg-2 col-footer-text">
         <div class="footer-column">
           <h6>Company</h6>
           <ul>
@@ -26,7 +26,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-2">
+      <div class="col-lg-2 col-footer-text">
         <div class="footer-column">
           <h6>LEGAL</h6>
           <ul>
@@ -42,7 +42,7 @@
 
 <div class="bottom_footer">
   <div class="container-fluid px-5">
-    <div class="row">
+    <div class="row bot-footer-animation">
       <div class="col-lg-6">
         <p class="dev-text">© totalweightloss 2024. all rights reserved</p>
       </div>

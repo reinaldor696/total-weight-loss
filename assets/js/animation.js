@@ -243,7 +243,7 @@ function faqSectionAnimation() {
             start: '0 center',
             end: '0 center',
         },
-        ease: "expo"
+        ease: "back"
     });
 
     // FAQ Section Title
@@ -253,7 +253,6 @@ function faqSectionAnimation() {
     tl.from(".control-sec", { yPercent: 70 }, "-=0.5");
 }
 faqSectionAnimation();
-
 
 // Control Section Animation
 function controlSectionAnimation() {
@@ -323,3 +322,24 @@ function controlSectionAnimation() {
     }, "-=2");
 }
 controlSectionAnimation();
+
+// Footer Animation
+function footerAnimation() {
+    const tl = gsap.timeline({ 
+        scrollTrigger: { 
+            trigger: 'footer',
+            start: 'center bottom',
+            end: 'center bottom',
+            markers: true
+        },
+        ease: "expo"
+    });
+
+    // Footer Section
+    tl.from('.img-footer-logo, .col-footer-text', { y: 200, duration: 1 });
+
+    tl.from('.par-footer-logo', { y: 200, duration: 1 }, "-=0.5");
+
+    tl.from('.bot-footer-animation', { y: 200, duration: 1 }, "-=0.5");
+}
+footerAnimation();
