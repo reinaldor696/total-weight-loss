@@ -98,7 +98,7 @@ h2.get-clients {
 
 .test-left {
     position: relative;
-    right: calc(200 / 1920 * 100vw);
+    right: calc(450 / 1920 * 100vw);
 }
 
 .img-test-cont {
@@ -231,4 +231,8 @@ h2.get-clients {
     transform: rotate(1.088deg);
     bottom: calc(93 / 1080* 100vh);
     left: calc(117 / 1920* 100vw);
+}
+
+.testimonial-sec {
+    height: 100vh;  
 }

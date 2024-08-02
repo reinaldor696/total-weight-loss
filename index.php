@@ -128,13 +128,7 @@ $title = "Home";
 <!-- Testimonials !-->
 <section class="testimonial-sec">
    <div class="container-fluid px-5 test-sec-conta2">
-      <div class="row test-sec-conta2">
-         <div class="col-lg-12 test-sec-conta2">
-
-            <div class="testi-carousal">
-
-               <div>
-                  <div class="test-item test-item-cont">
+     
 
                      <div class="row">
                         <div class="col-lg-7 img-carrusel-container">
@@ -176,13 +170,6 @@ $title = "Home";
                      </div>
 
 
-                  </div>
-               </div>
-
-            </div>
-
-         </div>
-      </div>
    </div>
 </section>
 <!-- End Testimonials !-->
