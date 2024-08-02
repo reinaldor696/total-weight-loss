@@ -41,8 +41,8 @@ function initScroll() {
     const tl = gsap.timeline({ 
         scrollTrigger: { 
             trigger: '.scroll-down',
-            start: 'top 350',
-            end: '3000 350',
+            start: 'top 750',
+            end: '3000 750',
             scrub: 2,
             pin: true
         }
@@ -93,7 +93,8 @@ function initScroll() {
     // A mobile keyfame with different direction
     tl.from('.mobile-img', { 
         keyframes:{
-            "0%":{ yPercent: -250, xPercent: 190, opacity: 0, rotation: 25, visibility: "visible" },
+            "0%":{ yPercent: -250, xPercent: 190, rotation: 25, visibility: "visible" },
+            "30%": { opacity: 0 },
             "50%":{ opacity: 1, rotation: 25 },
             "100%":{ yPercent: 0, xPercent: 0, rotation: 0 , opacity: 1 },
         },
@@ -335,11 +336,13 @@ function footerAnimation() {
         ease: "expo"
     });
 
-    // Footer Section
+    // img-footer-logo and col-footer-text
     tl.from('.img-footer-logo, .col-footer-text', { y: 200, duration: 1 });
 
+    // par-footer-logo
     tl.from('.par-footer-logo', { y: 200, duration: 1 }, "-=0.5");
 
+    // bot-footer-animation
     tl.from('.bot-footer-animation', { y: 200, duration: 1 }, "-=0.5");
 }
 footerAnimation();
