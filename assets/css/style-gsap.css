@@ -157,6 +157,7 @@ h2.get-clients {
 }
 
 .controlwrap {
+    position: relative;
     background: #021A6E !important;
     overflow: hidden;
 }
