@@ -328,8 +328,7 @@ function footerAnimation() {
         scrollTrigger: { 
             trigger: 'footer',
             start: 'center bottom',
-            end: 'center bottom',
-            markers: true
+            end: 'center bottom'
         },
         ease: "expo"
     });
@@ -338,9 +337,9 @@ function footerAnimation() {
     tl.from('.img-footer-logo, .col-footer-text', { y: 200, duration: 1 });
 
     // par-footer-logo
-    tl.from('.par-footer-logo', { y: 200, duration: 1 }, "-=0.5");
+    tl.from('.par-footer-logo', { y: 200, duration: 1 }, "-=0.8");
 
     // bot-footer-animation
-    tl.from('.bot-footer-animation', { y: 200, duration: 1 }, "-=0.5");
+    tl.from('.bot-footer-animation', { y: 100, duration: 1 }, "-=0.8");
 }
 footerAnimation();
