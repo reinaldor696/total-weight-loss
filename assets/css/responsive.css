@@ -907,9 +907,6 @@
     Nueva versiòn de Responsive 
     
 ################################### */
-
-
-
 @media  screen and (min-width: 768px) and (max-width: 1023px){
     .testimonial-sec {
         height: 50vh !important;
