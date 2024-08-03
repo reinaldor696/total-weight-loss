@@ -13,7 +13,7 @@ function initAnimation() {
     tl.fromTo('#text-logo-header', { yPercent: -400 }, { yPercent: 0, xPercent: 40 }, "<");
 
     // Navbar Header
-    tl.from('#navbarTogglerDemo03 li', { yPercent: -200, stagger: 0.05 }, "<");
+    tl.from('#navbarTogglerDemo03 li, .navbar-toggler', { yPercent: -200, stagger: 0.05 }, "<");
 
     // Banner Text
     tl.fromTo('.banner-text p', { xPercent: -40, opacity: 0 }, { xPercent: 0, opacity: 1, }, "<");
