@@ -128,48 +128,44 @@ $title = "Home";
 <!-- Testimonials !-->
 <section class="testimonial-sec">
    <div class="container-fluid px-5 test-sec-conta2">
-     
+      <div class="row">
+         <div class="col-lg-7 img-carrusel-container">
+            <div class="test-left">
+               <div class="test-images">
+                  <div class="img-test-cont">
+                        <div class="test-img-container" id="testimonial-image2"></div>
+                        <img class="test-img-container" id="prev-img-testimonial2" class="" src="" alt="image">
+                        <img class="test-img-container" id="prev-img-testimonial" class="" src="" alt="image">
+                        <img class="test-img-container" id="testimonial-image" class="" src="" alt="image">
+                  </div>
+               </div>
+               <div class="test-uptext">
+                  <div class="test-date-img">
+                     <h6 id="dat-days-animat"></h6><h6>/03</h6>
+                  </div>
+                  
+                  <p id="text-review-animat" class="reiws">Reviews</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-5 prelative">
+            <div class="test-right">
+               <div class="top-text">
+                  <h6 id="testimonial-name"></h6>
+                  <p id="testimonial-text"></p>
+               </div>
+               <div class="bottom-text">
+                  <h5 id="test-weight"></h5>
+                  <p id="test-months"></p>
+               </div>                         
+               <svg id="next-img-btn" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" fill="#23A9F4" stroke="#23A9F4"/>
+                  <path d="M26.3331 40C26.0694 39.9999 25.8117 39.9265 25.5925 39.7891C25.3732 39.6516 25.2024 39.4563 25.1015 39.2277C25.0006 38.9992 24.9742 38.7477 25.0256 38.5051C25.077 38.2624 25.204 38.0396 25.3904 37.8646L33.7815 29.9923L25.3904 22.12C25.1475 21.8841 25.0131 21.5681 25.0162 21.2401C25.0192 20.9121 25.1594 20.5983 25.4066 20.3664C25.6539 20.1345 25.9883 20.0029 26.3379 20C26.6875 19.9972 27.0243 20.1233 27.2758 20.3512L36.6096 29.1079C36.8596 29.3425 37 29.6606 37 29.9923C37 30.324 36.8596 30.6422 36.6096 30.8767L27.2758 39.6335C27.0258 39.8681 26.6867 39.9999 26.3331 40Z" fill="white"/>
+               </svg>
 
-                     <div class="row">
-                        <div class="col-lg-7 img-carrusel-container">
-                           <div class="test-left">
-                              <div class="test-images">
-                                 <div class="img-test-cont">
-                                       <div class="test-img-container" id="testimonial-image2"></div>
-                                       <img class="test-img-container" id="prev-img-testimonial2" class="" src="" alt="image">
-                                       <img class="test-img-container" id="prev-img-testimonial" class="" src="" alt="image">
-                                       <img class="test-img-container" id="testimonial-image" class="" src="" alt="image">
-                                 </div>
-                              </div>
-                              <div class="test-uptext">
-                                 <div class="test-date-img">
-                                    <h6 id="dat-days-animat"></h6><h6>/03</h6>
-                                 </div>
-                                 
-                                 <p id="text-review-animat" class="reiws">Reviews</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-5 prelative">
-                           <div class="test-right">
-                              <div class="top-text">
-                                 <h6 id="testimonial-name"></h6>
-                                 <p id="testimonial-text"></p>
-                              </div>
-                              <div class="bottom-text">
-                                 <h5 id="test-weight"></h5>
-                                 <p id="test-months"></p>
-                              </div>                         
-                              <svg id="next-img-btn" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <circle cx="30" cy="30" r="29" fill="#23A9F4" stroke="#23A9F4"/>
-                                 <path d="M26.3331 40C26.0694 39.9999 25.8117 39.9265 25.5925 39.7891C25.3732 39.6516 25.2024 39.4563 25.1015 39.2277C25.0006 38.9992 24.9742 38.7477 25.0256 38.5051C25.077 38.2624 25.204 38.0396 25.3904 37.8646L33.7815 29.9923L25.3904 22.12C25.1475 21.8841 25.0131 21.5681 25.0162 21.2401C25.0192 20.9121 25.1594 20.5983 25.4066 20.3664C25.6539 20.1345 25.9883 20.0029 26.3379 20C26.6875 19.9972 27.0243 20.1233 27.2758 20.3512L36.6096 29.1079C36.8596 29.3425 37 29.6606 37 29.9923C37 30.324 36.8596 30.6422 36.6096 30.8767L27.2758 39.6335C27.0258 39.8681 26.6867 39.9999 26.3331 40Z" fill="white"/>
-                              </svg>
-
-                           </div>
-                        </div>
-                     </div>
-
-
+            </div>
+         </div>
+      </div>
    </div>
 </section>
 <!-- End Testimonials !-->
@@ -178,7 +174,7 @@ $title = "Home";
    <div class="container-fluid px-5">
       <div class="ceo-inner">
          <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 img-ceo-sec-cont">
                <div class="ceo-img">
                   <img src="assets/images/ceo-image.webp" class="img-fluid" alt="CEO" />
                </div>
@@ -193,28 +189,7 @@ $title = "Home";
          </div>
       </div>
    </div>
-</section>
-<!-- End CEO Section !-->
-<!-- CEO Johny !-->
-<section class="ceojohnny">
-   <div class="marquee">
-      <div class="track">
-         <div class="content">&nbsp;Johnny Hadac
-            <svg width="228" height="6" viewBox="0 0 228 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <rect y="0.5" width="228" height="5" fill="white" />
-            </svg>
-            CEO
-            <svg width="228" height="6" viewBox="0 0 228 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <rect y="0.5" width="228" height="5" fill="white" />
-            </svg>
-            Johnny Hadac
-         </div>
-      </div>
-   </div>
-</section>
-<!-- End CEO Johny !-->
-<!-- Clients Section !-->
-<section class="clients-sec">
+
    <div id="clientes-sec-logos" class="container-fluid px-5">
       <div class="row cl-wrape">
          <div class="col-lg-3 col-sm-6 col-xs-6">
@@ -248,7 +223,25 @@ $title = "Home";
       </div>
    </div>
 </section>
-<!-- End Clients Section !-->
+<!-- End CEO Section !-->
+<!-- CEO Johny !-->
+<section class="ceojohnny">
+   <div class="marquee">
+      <div class="track">
+         <div class="content">&nbsp;Johnny Hadac
+            <svg width="228" height="6" viewBox="0 0 228 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect y="0.5" width="228" height="5" fill="white" />
+            </svg>
+            CEO
+            <svg width="228" height="6" viewBox="0 0 228 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect y="0.5" width="228" height="5" fill="white" />
+            </svg>
+            Johnny Hadac
+         </div>
+      </div>
+   </div>
+</section>
+<!-- End CEO Johny !-->
 <!-- FAQ Section !-->
 <section class="faq-sec">
    <div class="container-fluid px-5">

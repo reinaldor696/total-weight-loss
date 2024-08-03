@@ -43,7 +43,7 @@ h2.banner-heading {
     background-color: #F3F3F3;
     padding: 0;
     overflow: hidden;
-    width: calc(1920 / 1920 * 100vw);
+    width: 100%;
     height: 1300px;
     display: flex;
     align-items: center;
@@ -144,13 +144,19 @@ h2.get-clients {
 }
 
 .ceo-sec {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+    height: calc(1032 / 1080* 100vh);
 }
 
 .test-item-cont {
     height: 500px;
     display: flex;
+}
+
+.ceo-img {
+    scale: 1 !important;
 }
 
 .img-carrusel-container {
@@ -165,7 +171,8 @@ h2.get-clients {
 }
 
 #clientes-sec-logos {
-    visibility: hidden;
+    background: linear-gradient(0deg, #001569 50%, #1C89D6 100%);
+    height: calc(1032 / 1080* 100vh);
 }
 
 .control-heading {
