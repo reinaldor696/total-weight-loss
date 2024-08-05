@@ -134,14 +134,20 @@ $title = "Home";
                <div class="test-images">
                   <div class="img-test-cont">
                         <div class="test-img-container" id="testimonial-image2"></div>
-                        <img class="test-img-container" id="prev-img-testimonial2" class="" src="" alt="image">
-                        <img class="test-img-container" id="prev-img-testimonial" class="" src="" alt="image">
-                        <img class="test-img-container" id="testimonial-image" class="" src="" alt="image">
+                        <img class="test-img-container" id="prev-img-testimonial2" src="assets/images/test-big-3.webp" alt="image">
+                        <img class="test-img-container" id="prev-img-testimonial" src="assets/images/test-big-2.webp" alt="image">
+                        <img class="test-img-container" id="testimonial-image" src="assets/images/test-big-1.webp" alt="image">
                   </div>
                </div>
                <div class="test-uptext">
                   <div class="test-date-img">
-                     <h6 id="dat-days-animat"></h6><h6>/03</h6>
+                     <div class="dat-days-cont">
+                        <div class="dat-days-cont2">
+                           <h6 id="dat-days-animat2">01</h6>
+                           <h6 id="dat-days-animat">02</h6>
+                        </div>
+                     </div>
+                     <h6>/03</h6>
                   </div>
                   
                   <p id="text-review-animat" class="reiws">Reviews</p>
@@ -151,12 +157,14 @@ $title = "Home";
          <div class="col-lg-5 prelative">
             <div class="test-right">
                <div class="top-text">
-                  <h6 id="testimonial-name"></h6>
-                  <p id="testimonial-text"></p>
+                  <h6 id="testimonial-name">Emily Bonnevelle</h6>
+                  <p id="testimonial-text">
+                  “In only 3 weeks I have lost 10 pounds. I purchased the E-book and would highly recommend to everyone who asks.”
+                  </p>
                </div>
                <div class="bottom-text">
-                  <h5 id="test-weight"></h5>
-                  <p id="test-months"></p>
+                  <h5 id="test-weight">-76lbs</h5>
+                  <p id="test-months">8 months</p>
                </div>                         
                <svg id="next-img-btn" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="30" cy="30" r="29" fill="#23A9F4" stroke="#23A9F4"/>

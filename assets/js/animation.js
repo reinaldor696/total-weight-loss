@@ -124,10 +124,10 @@ function ourClientGetResultAnimation() {
     // Our Clients Container
     tl.to(".our-clients-bag", {
         keyframes:{
-            "0%":{ scale: 0.2, yPorcent: 300 },
-            "50%":{ yPorcent: 0, scale: 0.2 },
+            "0%":{ scale: 0.2, yPercent: 300 },
+            "50%":{ yPercent: 0, scale: 0.2 },
             "90%":{ borderRadius: '50%' },
-            "100%":{ opacity: 1, yPorcent: 0, scale: 1, borderRadius: '0%' },
+            "100%":{ opacity: 1, yPercent: 0, scale: 1, borderRadius: '0%' },
         },
         duration: 2
     });

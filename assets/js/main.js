@@ -4,12 +4,13 @@
 const testimonialName = document.getElementById("testimonial-name");
 const testimonialText = document.getElementById("testimonial-text");
 const datDaysAnimat = document.getElementById("dat-days-animat");
+const datDaysAnimat2 = document.getElementById("dat-days-animat2");
 const testWeight = document.getElementById("test-weight");
 const testMonths = document.getElementById("test-months");
 const testimonialImage = document.getElementById("testimonial-image");
 const prevImgTestimonial = document.getElementById("prev-img-testimonial");
 const prevImgTestimonial2 = document.getElementById("prev-img-testimonial2");
-const nextImgBtn = document.getElementById("next-img-btn");
+const nextTestBtn = document.getElementById("next-img-btn");
 const testImgContainer = document.querySelectorAll(".test-img-container");
 const imgTestCont = document.querySelector(".img-test-cont");
 const testImg2 = document.getElementById("testimonial-image2");
@@ -44,63 +45,89 @@ const testimonialImg = [
 
 let currentIndex = 0;
 
-function updateImg() {
-    // Update the image and text
-    testimonialName.textContent = testimonialImg[currentIndex].name;
-    testimonialImage.src = testimonialImg[0].img;
-    testimonialText.textContent = testimonialImg[currentIndex].testimonial;
-    datDaysAnimat.textContent = testimonialImg[currentIndex].day;
-    testWeight.textContent = testimonialImg[currentIndex].lbs;
-    testMonths.textContent = testimonialImg[currentIndex].time;
+// Update the image and text with animations
+function updateTestImgText() {
+    gsap.to(testimonialName, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            testimonialName.textContent = testimonialImg[currentIndex].name;
+            gsap.to(testimonialName, { opacity: 1, duration: 0.5 });
+    }});
 
-    // Update the prev image
-    let prevIndex = (currentIndex + 1) % testimonialImg.length;
-    prevImgTestimonial.src = testimonialImg[1].img;
-
-    let prevIndex2 = (currentIndex + 2) % testimonialImg.length;
-    prevImgTestimonial2.src = testimonialImg[2].img;
-}
-
-function animateTransitionBefore() {
-    
-}
-
-let currentX = 0;
-
-// Event Listeners Btn After
-nextImgBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % testimonialImg.length;
-
-    currentX += 270;
-
-    testImgContainer.forEach((imgCont) => {
-        imgCont.style.transform = `translateX(calc(${currentX}/ 1920 * 100vw))`;
-        imgCont.style.transition = '1s';
+    gsap.to(testimonialImage, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            testimonialImage.src = testimonialImg[currentIndex].img;
+            gsap.to(testimonialImage, { opacity: 1, duration: 0.5 });
+        }
     });
 
-    const newImg = document.createElement('img');
+    gsap.to(testimonialText, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            testimonialText.textContent = testimonialImg[currentIndex].testimonial;
+            gsap.to(testimonialText, { opacity: 1, duration: 0.5 });
+        }
+    });
 
-    let prevIndex = (currentIndex - 1) % testimonialImg.length;
-    if (prevIndex < 0) {
-        prevIndex = testimonialImg.length - 1;
-    }
+    /*
+    reparar
+    gsap.to(".dat-days-cont2", {
+        ease: "power2.in",
+        onComplete: () => {
+            datDaysAnimat.textContent = testimonialImg[currentIndex].day;
+            gsap.to(datDaysAnimat, datDaysAnimat2, {y: -21});
+        },
+        duration: 0.5
+    })*/
 
-    newImg.src = testimonialImg[prevIndex].img;
+    gsap.to(testWeight, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            testWeight.textContent = testimonialImg[currentIndex].lbs;
+            gsap.to(testWeight, { opacity: 1, duration: 0.5 });
+        }
+    });
 
-    //newImg.classList.add('test-img-container');
+    gsap.to(testMonths, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            testMonths.textContent = testimonialImg[currentIndex].time;
+            gsap.to(testMonths, { opacity: 1, duration: 0.5 });
+        }
+    });
 
-    testImg2.appendChild(newImg);
+    // Update the prev images with animations
+    let prevIndex = (currentIndex + 1) % testimonialImg.length;
 
-    updateImg();
-});
+    gsap.to(prevImgTestimonial, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            prevImgTestimonial.src = testimonialImg[prevIndex].img;
+            gsap.to(prevImgTestimonial, { opacity: 1, duration: 0.5 });
+    }});
 
-// Event Listeners Btn After From Image
-prevImgTestimonial.addEventListener('click', () => {
+    let prevIndex2 = (currentIndex + 2) % testimonialImg.length;
+
+    gsap.to(prevImgTestimonial2, { 
+        opacity: 0, 
+        duration: 0.5, 
+        onComplete: () => {
+            prevImgTestimonial2.src = testimonialImg[prevIndex2].img;
+            gsap.to(prevImgTestimonial2, { opacity: 1, duration: 0.5 });
+    }});
+
+    // Update the current index
     currentIndex = (currentIndex + 1) % testimonialImg.length;
+}
 
-    updateImg();
-});
-
-updateImg();
+// Event Listeners Btn After
+nextTestBtn.addEventListener('click', updateTestImgText);
 
 //GSDevTools.create({animation:tl})

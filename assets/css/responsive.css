@@ -911,4 +911,9 @@
     .testimonial-sec {
         height: 50vh !important;
     }  
-};
+
+    #next-img-btn {
+        width: calc(58 / 768* 100vw);
+        height: calc(58 / 768* 100vw);
+    }
+}

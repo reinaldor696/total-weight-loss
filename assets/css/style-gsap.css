@@ -85,6 +85,14 @@ h2.get-clients {
     visibility: hidden;
 }
 
+.dat-days-cont {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    overflow: hidden;
+    height: 21px;
+}
+
 .test-date-img {
     display: flex;
     flex-direction: row;
