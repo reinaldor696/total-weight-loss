@@ -902,18 +902,8 @@
 }
 
 
-/* #################################
-    
-    Nueva versiòn de Responsive 
-    
-################################### */
 @media  screen and (min-width: 768px) and (max-width: 1023px){
     .testimonial-sec {
         height: 50vh !important;
     }  
-
-    #next-img-btn {
-        width: calc(58 / 768* 100vw);
-        height: calc(58 / 768* 100vw);
-    }
-}
+};
