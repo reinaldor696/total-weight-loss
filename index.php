@@ -187,7 +187,7 @@ $title = "Home";
                   <img src="assets/images/ceo-image.webp" class="img-fluid" alt="CEO" />
                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 text-ceo-sec-cont">
                <div class="ceo-text">
                   <p>This cookbook was made with love, care, and the desire to help people like you achieve a healthy and fulfilling life. </p>
                   <p>I would like to express my sincere gratitude to everyone who has supported me in creating this book. </p>

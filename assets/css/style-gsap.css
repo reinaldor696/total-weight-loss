@@ -202,16 +202,16 @@ h2.get-clients {
     width: calc(179.873 / 1920 * 100vw);
     height: calc(197.072 / 1080 * 100vh);
     transform: rotate(0deg);
-    bottom: calc(360 / 1080* 100vh);
-    right: calc(225 / 1920* 100vw);
+    bottom: 20%;
+    right: 14%;
 }
 
 .cover-book2-ctrl-sec {
     width: calc(188.811 / 1920* 100vw);
     height: calc(207.935 / 1080* 100vh);
     transform: rotate(30deg);
-    top: calc(80 / 1080* 100vh);
-    right: calc(57 / 1920* 100vw);
+    top: 0%;
+    right: 1%;
 }
 
 .cover-book3-ctrl-sec {
@@ -219,8 +219,8 @@ h2.get-clients {
     height: calc(340.008 / 1080* 100vh);
     transform: rotate(-30deg);
     scale: 0.8;
-    bottom: calc(-30 / 1080* 100vh);
-    left: calc(58 / 1920* 100vw);
+    bottom: -6%;
+    left: 0%;
     filter: blur(1.5px);
 }
 
@@ -228,24 +228,24 @@ h2.get-clients {
     width: calc(144.524 / 1920* 100vw);
     height: calc(153.621 / 1080* 100vh);
     transform: rotate(-33.896deg);
-    top: calc(500 / 1080* 100vh);
-    left: calc(500 / 1920* 100vw);
+    top: 38%;
+    left: 26%;
 }
 
 .cover-book5-ctrl-sec {
     width: calc(317.739 / 1920* 100vw);
     height: calc(371.782 / 1080* 100vh);
     transform: rotate(-2.588deg);
-    top: calc(200 / 1080* 100vh);
-    right: calc(144 / 1920* 100vw);
+    top: 29%;
+    right: 7%;
 }
 
 .cover-book6-ctrl-sec {
     width: calc(253.418 / 1920* 100vw);
     height: calc(294.452 / 1080* 100vh);
     transform: rotate(1.088deg);
-    bottom: calc(93 / 1080* 100vh);
-    left: calc(117 / 1920* 100vw);
+    bottom: 10%;
+    left: 6%;
 }
 
 .testimonial-sec {
