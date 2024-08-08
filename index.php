@@ -128,7 +128,7 @@ $title = "Home";
 <!-- Testimonials !-->
 <section class="testimonial-sec">
    <div class="container-fluid px-5 test-sec-conta2">
-      <div class="row">
+      <div class="row test-sec-cont-mquery">
          <div class="col-lg-7 img-carrusel-container">
             <div class="test-left">
                <div class="test-images">
@@ -181,7 +181,7 @@ $title = "Home";
 <section class="ceo-sec">
    <div class="container-fluid px-5">
       <div class="ceo-inner">
-         <div class="row">
+         <div class="row ceo-sec-cont-mquery">
             <div class="col-lg-6 img-ceo-sec-cont">
                <div class="ceo-img">
                   <img src="assets/images/ceo-image.webp" class="img-fluid" alt="CEO" />

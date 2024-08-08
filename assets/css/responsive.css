@@ -238,7 +238,7 @@
     }
     .banner-images {
         position: relative;
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         margin-top: 30px;
     }
@@ -754,16 +754,35 @@
         right: -190px;
     }
     .banner-images {
-        width: 40%;
+        position: relative;
+        width: 50%;
+        margin: 50% auto 0 auto;
     }
     img.img-fluid.banner-1 {
         left: -170px;
     }
     img.img-fluid.banner-2 {
         right: -70px;
+        bottom: -150px;
     }
     .scroll-down {
         bottom: 0;
+    }
+    .book-intro {
+        padding: 50px 0 50px 0;
+    }
+    .marquee {
+        height: 160px;
+    }
+    .mobile-right h2 span {
+        font-size: 1.5rem;
+    }
+    .mobile-right h2 {
+        font-size: 2.625rem;
+        line-height: 90%;
+    }
+    .content {
+        font-size: 2.75rem;
     }
     h2.get-clients {
         width: 600px;
@@ -788,7 +807,7 @@
         font-size: 16px;
     }
     .home-banner {
-        padding: 100px 0 500px 0;
+        padding: 100px 0 150px 0;
     }
     .banner-btn {
         margin-top: 20px;
@@ -814,6 +833,128 @@
         font-size: 14px;
         line-height: 14px;
     }
+    .testimonial-sec {
+        height: 100%;
+        padding: 20% 0 15% 0;
+    }
+    #testimonial-image {
+        width: 60%;
+        height: 60%;
+    }
+    #prev-img-testimonial {
+        width: 25%;
+        height: 25%;
+    }
+    #prev-img-testimonial2, #testimonial-image2 {
+        width: 25%;
+        height: 25%;
+    }
+    .test-sec-cont-mquery {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+    }
+    .test-left {
+        right: 15%;
+    }
+    .test-uptext {
+        top: 4% !important;
+        right: 60% !important;
+    }
+    .img-test-cont {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .test-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .bottom-text {
+        position: relative;
+        bottom: -80%;
+        right: 5%;
+    }
+    .top-text {
+        padding: 10% 0 0 10%;
+        width: 70%;
+    }
+    #next-img-btn {
+        position: absolute;
+        left: unset;
+        right: -3%;
+        bottom: 109%;
+        width: 15%;
+        height: 15%;
+    }
+    .prelative {
+        width: 100%;
+    }
+    .bottom-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .bottom-text h5 {
+        font-size: 4rem;
+        width: 40%;
+    }
+    .bottom-text p {
+        font-size: 2rem;
+        width: 40%;
+        margin-top: -4%;
+    }
+    .ceo-sec-cont-mquery {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ceo-text {
+        width: 90%
+    }
+    .cover-book1-ctrl-sec {
+        width: 9%;
+        height: 14%;
+    }
+    .cover-book2-ctrl-sec {
+        width: 11%;
+        height: 19%;
+    }
+    .cover-book3-ctrl-sec {
+        width: 19%;
+        height: 33%;
+
+    }
+    .cover-book4-ctrl-sec {
+        width: 11%;
+        height: 15%;
+    }
+    .cover-book5-ctrl-sec {
+        width: 20%;
+        height: 33%;
+    }
+    .cover-book6-ctrl-sec {
+        width: 15%;
+        height: 24%;
+    }
+    h2.control-heading {
+        font-size: 3.25rem;
+        line-height: 96%;
+    }
+    .faq-wrap h2 {
+        font-size: 1.625rem;
+    }
+    button.accordion-button {
+        font-size: 0.875rem;
+    }
+    .accordion-button:after {
+        font-size: 3.125rem;
+        width: auto;
+        height: auto;
+    }
+    ul.lists-mobile li {
+        font-size: 0.875rem;
+    }
     .intro-btn a {
         font-size: 14px;
     }
@@ -822,7 +963,8 @@
         margin-left: -14px;
     }
     .ceo-text p {
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 150%;
     }
     .col-xs-6 {
         width: 50%;
