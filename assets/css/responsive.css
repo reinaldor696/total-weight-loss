@@ -955,6 +955,16 @@
     ul.lists-mobile li {
         font-size: 0.875rem;
     }
+    .track {
+        position: absolute;
+        bottom: 10%;
+    }
+    .faq-sec {
+        padding-top: 0;
+    }
+    footer#footer {
+        padding-top: 10%;
+    }
     .intro-btn a {
         font-size: 14px;
     }
