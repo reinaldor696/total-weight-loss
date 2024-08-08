@@ -158,6 +158,10 @@ h2.get-clients {
     height: calc(1032 / 1080* 100vh);
 }
 
+.ceo-sec > .container-fluid {
+    height: 100%;
+}
+
 .test-item-cont {
     height: 500px;
     display: flex;
@@ -250,4 +254,9 @@ h2.get-clients {
 
 .testimonial-sec {
     height: 100vh;  
+}
+
+button.accordion-button.collapsed:after {
+    width: auto;
+    height: auto;
 }
