@@ -161,33 +161,33 @@ initScroll();
 
 // Our Clients Get Result Animation
 function ourClientGetResultAnimation() {
+    //Timeline Our Client Scrolltrigger
     const tl = gsap.timeline({ 
         scrollTrigger: { 
             trigger: '.our-clients',
-            start: 'center center',
-            end: 'bottom center',
+            start: 'top top',
+            end: 'center top',
             scrub: 2,
-            pin: true,
-            markers: true
+            pin: true
         }
     });
 
     // Our Clients Container
     tl.to(".our-clients-bag", {
         keyframes:{
-            "0%":{ scale: 0.2, yPercent: 300 },
-            "50%":{ yPercent: 0, scale: 0.2 },
+            "0%":{ scale: 0.15, yPercent: 200 },
+            "60%":{ yPercent: -8, scale: 0.15 },
             "90%":{ borderRadius: '50%' },
             "100%":{ opacity: 1, yPercent: 0, scale: 1.1, borderRadius: '0%' },
         },
-        duration: 2
+        duration: 2.5
     });
 
     // wrapped Container
     tl.to(".clinets-center", {
         keyframes:{
-            "0%":{ yPercent: 135, visibility: "visible" },
-            "50%":{ yPercent: 0 },
+            "0%":{ yPercent: 200, autoAlpha: 1 },
+            "40%":{ yPercent: -7 },
             "60%":{ scale: 0.5 },
             "100%":{ scale: 1 },
         },
@@ -197,8 +197,8 @@ function ourClientGetResultAnimation() {
     // Text Our Clients
     tl.to(".get-clients", {
         keyframes:{
-            "0%":{ yPercent: 135, visibility: "visible" },
-            "50%":{ yPercent: 0 },
+            "0%":{ yPercent: 200, autoAlpha: 1 },
+            "40%":{ yPercent: -7 },
             "60%":{ scale: 0.5 },
             "100%":{ scale: 1 },
         },
