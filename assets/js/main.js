@@ -53,7 +53,8 @@ function updateTestImgText() {
         onComplete: () => {
             testimonialName.textContent = testimonialImg[currentIndex].name;
             gsap.to(testimonialName, { opacity: 1, duration: 0.5 });
-    }});
+        }
+    });
 
     gsap.to(testimonialImage, { 
         opacity: 0, 

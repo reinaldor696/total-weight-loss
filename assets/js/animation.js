@@ -22,10 +22,10 @@ function initAnimation() {
     tl.fromTo('.banner-btn', { xPercent: -40, opacity: 0 }, { xPercent: 0, opacity: 1, }, "<");
 
     // Mobile Image
-    tl.fromTo('#mobile', { yPercent: 40, scale: 0.7, xPercent:15, rotation: -30 }, { yPercent: 0, scale: 1, xPercent:0, rotation: 0 }, "");
+    tl.from('#mobile', { yPercent: 40, scale: 0.7, xPercent:15, rotation: -30 }, "<");
     
     // Book Cover Image
-    tl.fromTo('#book-cover', { yPercent: 70, opacity: 0, rotation: -50 }, { yPercent: 0, opacity: 1, rotation: 0 }, "<");
+    tl.from('#book-cover', { yPercent: 70, opacity: 0, rotation: -50 }, "<");
 
     // Scroll Down
     tl.fromTo('.scroll-down svg', { opacity: 0, yPercent: 40 }, { opacity: 1, yPercent: 0 }, "<");
@@ -38,74 +38,124 @@ window.onload = function() {
 
 // Init Scroll Animation
 function initScroll() {
-    const tl = gsap.timeline({ 
-        scrollTrigger: { 
-            trigger: '.scroll-down',
-            start: 'top 750',
-            end: '3000 750',
-            scrub: 2,
+
+    //Timeline
+    const tl = gsap.timeline();
+
+    //Main Book Cover Animation
+    tl.to("#book-cover", {
+        duration: 5,
+        keyframes: {
+        '90%': {yPercent: 10, xPercent: 25, scale: 0.8, rotation: 0, transformOrigin: "80% 80%" },
+        '100%': { rotation: 20 },
+        },
+        scrollTrigger: {
+            trigger: '#book-cover',
+            start: 'center 45%',
+            end: '1800 45%',
+            scrub: true,
             pin: true
         }
     });
 
-     // Scroll Down Book Cover Image
+    //Main mobile Animation
+    tl.to("#mobile", {
+        yPercent: 90, 
+        xPercent: -50,
+        scale: 0.7,
+        duration: 5,
+        scrollTrigger: {
+            trigger: '#book-cover',
+            start: 'center 45%',
+            end: 'bottom 45%',
+            scrub: true, 
+            onLeave: () => {
+                gsap.to("#mobile", { autoAlpha: 0, duration: 0.1 });
+            },
+            onEnterBack: () => {
+                gsap.to("#mobile", { autoAlpha: 1, duration: 0.1 });
+            }
+        }
+    }, 0);
+
+    //Scroll Down Text Animation
     tl.to('.scroll-down', {
-        keyframes:{
-            "0%":{ opacity: 1 },
-            "30%":{ opacity: 1 },
-            "50%":{ opacity: 0 },
-            "100%":{ opacity: 0 },
-        },
-        duration: 5 
+        yPercent: 1000,
+        duration: 3, 
+        scrollTrigger: {
+            trigger: '#book-cover',
+            start: 'center 45%',
+            end: '1200 45%',
+            scrub: true, 
+            onLeave: () => {
+                gsap.to(".scroll-down", { opacity: 0, duration: 1 });
+            },
+            onEnterBack: () => {
+                gsap.to(".scroll-down", { opacity: 1, duration: 0.5 });
+            }
+        }
+    }, 0);
+
+    //Secundary Mobile Animation
+    tl.from('.mobile-img', {
+        duration: 1,
+        keyframes: {
+            '0%': {
+                yPercent: -135, 
+                xPercent: 120, 
+                rotation: 25,
+                autoAlpha: 0,
+                scale: 0.6
+            },
+            '20%': { autoAlpha: 1 },
+            '100%': {
+                yPercent: 0,
+                xPercent: 0, 
+                rotation: 0,
+                scale: 1
+            }
+        }, 
+        scrollTrigger: {
+            trigger: '.mobile-img',
+            start: 'top 35%',
+            end: '1430 35%',
+            scrub: true, 
+            onLeave: () => {
+                gsap.to(".mobile-img", { rotation: 35 });
+            },
+            onEnterBack: () => {
+                gsap.from(".mobile-img", { rotation: 35 });
+            }
+        }
     });
 
-    // Scroll Down Book Cover Image
-    tl.to('#book-cover', {
-        keyframes:{
-            "0%":{ yPercent:0, xPercent:0, scale: 1, rotation: 0, },
-            "90%":{ yPercent: 140, xPercent: 25, scale: 0.8, rotation: 0, },
-            "100%":{ rotation: 20, transformOrigin:"80% 80%" },
-        },
-        duration: 5 
-    }, 0);
+    //This is out of the timeline//
 
-    // Scroll Down Mobile Image
-    tl.to('#mobile', { 
-        keyframes:{
-            "0%":{ yPercent: 0, xPercent: 0, scale: 1 },
-            "40%":{ yPercent: 60, xPercent: -70, scale: 0.7 },
-            "50%":{ opacity: 0 },
-            "100%":{ yPercent: 210,  opacity: 0 },
-        },
-        duration: 4 
-    }, 0);
-
-    // Scroll Down Book List Container
-    tl.to('#book-list-container', { 
-        keyframes:{
-            "0%":{ yPercent: 100, opacity: 0 },
-            "85%":{ opacity: 0 },
-            "100%":{ yPercent: -20,  opacity: 1 },
-        },
-        duration: 5 
-    }, 0);
-
-    // A mobile keyfame with different direction
-    tl.from('.mobile-img', { 
-        keyframes:{
-            "0%":{ yPercent: -250, xPercent: 190, rotation: 25, visibility: "visible" },
-            "30%": { opacity: 0 },
-            "50%":{ opacity: 1, rotation: 25 },
-            "100%":{ yPercent: 0, xPercent: 0, rotation: 0 , opacity: 1 },
-        },
-        duration: 5 
+    //Book List Animation
+    gsap.from('#book-list-container', {
+        y: 100,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '#book-list-container',
+            start: 'top center',
+            end: 'center center',
+            scrub: true
+        }
     });
 
-    // Scroll Down list mobile content
-    tl.fromTo('.lists-mobile li', { yPercent: 50, opacity: 0 }, { yPercent: 0, opacity: 1, stagger: 0.1, delay: 0.5 });
-
-    //  Mobile Rotation
-    tl.fromTo('.mobile-img', { rotation: 0 }, { rotation: 35, duration: 1, delay: 0.5 });
+    //Mobile List Animation
+    gsap.from('.lists-mobile li', {
+        yPercent: 50,
+        opacity: 0,
+        stagger: 0.1, 
+        delay: 0.5,
+        scrollTrigger: {
+            trigger: '.mobile-right',
+            start: 'top 38%',
+            end: 'center 38%',
+            scrub: true
+        }
+    });
 }
 initScroll();
 
@@ -118,6 +168,7 @@ function ourClientGetResultAnimation() {
             end: 'bottom center',
             scrub: 2,
             pin: true,
+            markers: true
         }
     });
 

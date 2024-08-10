@@ -26,11 +26,6 @@ h2.banner-heading {
     opacity: 0;
 }
 
-.mobile-img {
-    opacity: 0;
-    visibility: hidden;
-}
-
 .book-intro {
     overflow: hidden;
 }
@@ -251,6 +246,7 @@ h2.get-clients {
     bottom: 10%;
     left: 6%;
 }
+
 
 .testimonial-sec {
     height: 100vh;  
