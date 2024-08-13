@@ -7,6 +7,36 @@
     width: calc(200 / 1920 * 100vw);
     height: 27px;
     object-fit: contain;
+    margin-left: 20%;
+}
+
+.navbar-brand {
+    width: 20%;
+}
+
+#navbar-id {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbarTogglerDemo03 {
+    flex-grow: 0;
+}
+
+#mobile {
+    will-change: scale, transform, opacity;
+}
+#book-cover {
+    will-change: scale, transform, opacity;
+}
+
+.scroll-down {
+    will-change: opacity, transform;
+}
+
+.mobile-img {
+    will-change: scale, transform, opacity;
 }
 
 h1 {
@@ -20,10 +50,6 @@ h2.banner-heading {
     text-transform: uppercase;
     font-style: italic;
     font-weight: 500;
-}
-
-.banner-text p {
-    opacity: 0;
 }
 
 .book-intro {

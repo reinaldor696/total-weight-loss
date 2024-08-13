@@ -1,35 +1,32 @@
 // Init Animation On Load
 function initAnimation() {
-    const tl = gsap.timeline({ defaults: { duration: 2, ease: "expo.out" } });
+    // Timeline
+    const tl = gsap.timeline({ defaults: { duration: 2, ease: "expo.out" }, });
     
     // h1 Title
-    tl.fromTo('h1', { xPercent: -40, opacity: 0 }, { xPercent: 0, opacity: 1 });
+    tl.from('h1', { xPercent: -40, opacity: 0 });
     
     // h2 Title
-    tl.fromTo('h2.banner-heading', { xPercent: 40, opacity: 0 }, { xPercent: 0, opacity: 1 }, "<");
+    tl.from('h2.banner-heading', { xPercent: 40, opacity: 0 }, "<");
 
     // Navbar Logo
     tl.from('#img-logo-header', { yPercent: -200 }, "<");
-    tl.fromTo('#text-logo-header', { yPercent: -400 }, { yPercent: 0, xPercent: 40 }, "<");
+    tl.from('#text-logo-header', { yPercent: -400, xPercent: -40 }, "<");
 
     // Navbar Header
-    tl.from('#navbarTogglerDemo03 li, .navbar-toggler', { yPercent: -200, stagger: 0.05 }, "<");
+    tl.from('#navbar-header li', { yPercent: -200, stagger: 0.12 }, "<");
 
     // Banner Text
-    tl.fromTo('.banner-text p', { xPercent: -40, opacity: 0 }, { xPercent: 0, opacity: 1, }, "<");
-    
-    // Banner Button
-    tl.fromTo('.banner-btn', { xPercent: -40, opacity: 0 }, { xPercent: 0, opacity: 1, }, "<");
+    tl.from('.banner-text', { xPercent: -50, opacity: 0 }, "<");
 
     // Mobile Image
-    tl.from('#mobile', { yPercent: 40, scale: 0.7, xPercent:15, rotation: -30 }, "<");
+    tl.fromTo('#mobile', { yPercent: 40, scale: 0.7, xPercent:15, rotation: -30 }, { yPercent: 0, scale: 1, xPercent: 0, rotation: 0 }, "<");
     
     // Book Cover Image
-    tl.from('#book-cover', { yPercent: 70, opacity: 0, rotation: -50 }, "<");
+    tl.fromTo('#book-cover', { yPercent: 70, opacity: 0, rotation: -50 }, { yPercent: 0, opacity: 1, rotation: 0 }, "<");
 
     // Scroll Down
-    tl.fromTo('.scroll-down svg', { opacity: 0, yPercent: 40 }, { opacity: 1, yPercent: 0 }, "<");
-    tl.fromTo('.scroll-down h6', { opacity: 0, yPercent: 100 }, { opacity: 1, yPercent: 0 }, "<");
+    tl.from('.scroll-down', { opacity: 0, yPercent: 100 }, "<");
 }
 
 window.onload = function() {
@@ -38,82 +35,48 @@ window.onload = function() {
 
 // Init Scroll Animation
 function initScroll() {
-
     //Timeline
-    const tl = gsap.timeline();
-
-    //Main Book Cover Animation
-    tl.to("#book-cover", {
-        duration: 5,
-        keyframes: {
-        '90%': {yPercent: 10, xPercent: 25, scale: 0.8, rotation: 0, transformOrigin: "80% 80%" },
-        '100%': { rotation: 20 },
-        },
+    const tl = gsap.timeline({
         scrollTrigger: {
             trigger: '#book-cover',
             start: 'center 45%',
             end: '1800 45%',
-            scrub: true,
+            scrub: 1,
             pin: true
         }
     });
 
-    //Main mobile Animation
-    tl.to("#mobile", {
-        yPercent: 90, 
-        xPercent: -50,
-        scale: 0.7,
+    //Main Book Cover Animation
+    tl.to("#book-cover", {
+        keyframes: {
+        '0%': { yPercent: 0, xPercent: 0, scale: 1, rotation: 0, transformOrigin: '50% 50%' },
+        '90%': { yPercent: 10, xPercent: 25, scale: 0.8, rotation: 0, transformOrigin: "80% 80%", },
+        '100%': { rotation: 20 }
+        },
         duration: 5,
-        scrollTrigger: {
-            trigger: '#book-cover',
-            start: 'center 45%',
-            end: 'bottom 45%',
-            scrub: true, 
-            onLeave: () => {
-                gsap.to("#mobile", { autoAlpha: 0, duration: 0.1 });
-            },
-            onEnterBack: () => {
-                gsap.to("#mobile", { autoAlpha: 1, duration: 0.1 });
-            }
-        }
-    }, 0);
+        overwrite: 'auto'
+    });
+
+    //Main mobile Animation
+    tl.to("#mobile", { yPercent: 50, xPercent: -70, scale: 0.7, duration: 1, autoAlpha: 0, overwrite: 'auto' }, 0);
 
     //Scroll Down Text Animation
     tl.to('.scroll-down', {
         yPercent: 1000,
         duration: 3, 
-        scrollTrigger: {
-            trigger: '#book-cover',
-            start: 'center 45%',
-            end: '1200 45%',
-            scrub: true, 
-            onLeave: () => {
-                gsap.to(".scroll-down", { opacity: 0, duration: 1 });
-            },
-            onEnterBack: () => {
-                gsap.to(".scroll-down", { opacity: 1, duration: 0.5 });
-            }
+        keyframes: {
+            '90%': { opacity: 1 },
+            '100%': { opacity: 0 }
         }
     }, 0);
 
     //Secundary Mobile Animation
-    tl.from('.mobile-img', {
+    gsap.from('.mobile-img', {
         duration: 1,
         keyframes: {
-            '0%': {
-                yPercent: -135, 
-                xPercent: 120, 
-                rotation: 25,
-                autoAlpha: 0,
-                scale: 0.6
-            },
+            '0%': { yPercent: -135, xPercent: 130, rotation: 25, autoAlpha: 0, scale: 0.5 },
             '20%': { autoAlpha: 1 },
-            '100%': {
-                yPercent: 0,
-                xPercent: 0, 
-                rotation: 0,
-                scale: 1
-            }
+            '100%': { yPercent: 0, xPercent: 0, rotation: 0, scale: 1 }
         }, 
         scrollTrigger: {
             trigger: '.mobile-img',
@@ -166,7 +129,7 @@ function ourClientGetResultAnimation() {
         scrollTrigger: { 
             trigger: '.our-clients',
             start: 'top top',
-            end: 'center top',
+            end: '1800 top',
             scrub: 2,
             pin: true
         }
