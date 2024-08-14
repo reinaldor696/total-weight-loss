@@ -24,12 +24,6 @@
     flex-grow: 0;
 }
 
-#mobile {
-    will-change: scale, transform, opacity;
-}
-#book-cover {
-    will-change: scale, transform, opacity;
-}
 
 .scroll-down {
     will-change: opacity, transform;

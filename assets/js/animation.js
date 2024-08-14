@@ -76,19 +76,14 @@ function initScroll() {
         keyframes: {
             '0%': { yPercent: -135, xPercent: 130, rotation: 25, autoAlpha: 0, scale: 0.5 },
             '20%': { autoAlpha: 1 },
-            '100%': { yPercent: 0, xPercent: 0, rotation: 0, scale: 1 }
+            '95%': { yPercent: 0, xPercent: 0, rotation: 0, scale: 1 },
+            '100%': { rotation: -15 }
         }, 
         scrollTrigger: {
             trigger: '.mobile-img',
             start: 'top 35%',
             end: '1430 35%',
-            scrub: true, 
-            onLeave: () => {
-                gsap.to(".mobile-img", { rotation: -15 });
-            },
-            onEnterBack: () => {
-                gsap.from(".mobile-img", { rotation: -15 });
-            }
+            scrub: 2, 
         }
     });
 
@@ -283,7 +278,7 @@ function controlSectionAnimation() {
             trigger: '.control-sec',
             start: '0 bottom',
             end: 'bottom bottom',
-            scrub: true
+            scrub: 4
         },
         ease: "expo"
     });
