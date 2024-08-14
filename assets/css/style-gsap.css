@@ -177,6 +177,7 @@ h2.get-clients {
     border-bottom-right-radius: 100px;
     overflow: hidden;
     height: calc(1032 / 1080* 100vh);
+    background: linear-gradient(180deg, rgba(35, 169, 244, 1) 0%, rgba(35, 169, 244, 1) 100%) !important;
 }
 
 .ceo-sec > .container-fluid {
@@ -204,7 +205,7 @@ h2.get-clients {
 }
 
 #clientes-sec-logos {
-    background: linear-gradient(0deg, #001569 50%, #1C89D6 100%);
+    background: linear-gradient(180deg, rgba(35, 169, 244, 1) 0% , rgb(0, 21, 105) 100%) !important;
     height: calc(1032 / 1080* 100vh);
 }
 
@@ -274,7 +275,8 @@ h2.get-clients {
 }
 
 .testimonial-sec {
-    height: 100vh;  
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(0, 21, 105) 0%, rgba(35, 169, 244, 1) 100%) !important;  
 }
 
 button.accordion-button.collapsed:after {

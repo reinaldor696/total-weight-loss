@@ -49,9 +49,9 @@ function initScroll() {
     //Main Book Cover Animation
     tl.to("#book-cover", {
         keyframes: {
-        '0%': { yPercent: 0, xPercent: 0, scale: 1, rotation: 0, transformOrigin: '50% 50%' },
-        '90%': { yPercent: 10, xPercent: 25, scale: 0.8, rotation: 0, transformOrigin: "80% 80%", },
-        '100%': { rotation: 20 }
+        '0%': { yPercent: 0, xPercent: 0, scale: 1, rotation: 0, transformOrigin: '80% 80%' },
+        '90%': { yPercent: 10, xPercent: 25, scale: 0.8, rotation: 0 },
+        '100%': { rotation: 20, transformOrigin: "80% 80%" }
         },
         duration: 5,
         overwrite: 'auto'
@@ -84,10 +84,10 @@ function initScroll() {
             end: '1430 35%',
             scrub: true, 
             onLeave: () => {
-                gsap.to(".mobile-img", { rotation: 35 });
+                gsap.to(".mobile-img", { rotation: -15 });
             },
             onEnterBack: () => {
-                gsap.from(".mobile-img", { rotation: 35 });
+                gsap.from(".mobile-img", { rotation: -15 });
             }
         }
     });
@@ -192,8 +192,15 @@ function testimonialsAnimation() {
     }, 
     { 
         scale: 1,
-        transformOrigin: "bottom right" 
+        transformOrigin: "bottom right",
+        ease: "power.out2",
+        duration: 1 
     });
+    
+    // Prev Imgs Testimonial
+    tl.fromTo('#prev-img-testimonial, #prev-img-testimonial2', 
+        { xPercent: 80 }, 
+        {  xPercent: 0, ease: "power.out2", duration: 1 }, 0);
 
     tl.from('#dat-days-animat', { yPercent: 400  }, "<");
 
@@ -204,7 +211,7 @@ testimonialsAnimation();
 // Ceo Section Animation
 function ceoSectionAnimation() {
     
-    // CEO Image
+    // CEO Image Initial Animation
     gsap.from('.ceo-img', {
         scrollTrigger: {
             trigger: '.ceo-sec',
@@ -217,34 +224,36 @@ function ceoSectionAnimation() {
     });
 
     // CEO Img and Text Timeline
-    const tl = gsap.timeline({ 
-        scrollTrigger: { 
+    let tl2 = gsap.timeline({
+        scrollTrigger : {
             trigger: '.ceo-sec',
-            start: 'center 40%',
+            start: '60% 40%',
             end: 'bottom 40%',
-            scrub: true
+            onEnter: () => {
+                if (!tl2.isActive()) {
+                    tl2.play(); // if the timeline isn't already playing, play it
+                } else {
+                    tl2.resume();
+                }
+            },
+            onLeave: () => {
+                if (tl2.reversed()) {
+                    tl2.play(); // if the timeline is reversed, play it
+                } else {
+                    tl2.reverse();
+                }
+            }
         }
     });
 
-    // CEO Testimonial Text And image
-    tl.to('.ceo-text, .ceo-img', {
-        y: -200, 
-        opacity: 0,
-        duration: 1
-    });
-    
-    // CEO Johnny Name Text
-    tl.to('.ceojohnny', {
-        y: -400,
-        delay: 1.5, 
-        duration: 2,
-    }, "-=1.8");
+    // CEO Text and Image Animation 
+    tl2.to('.ceo-text, .ceo-img', { y: -200, opacity: 0, duration: 1, overwrite: 'auto' });
+    // CEO Johnny Track Animation
+    tl2.to('.ceojohnny', { y: -600, duration: 1, overwrite: 'auto' }, 0);
+    // CEO Clientes Logos Animation
+    tl2.to('#clientes-sec-logos', { y: -400, duration: 1, overwrite: 'auto' }, 0);
 
-    // Clients Logos Section
-    tl.to('#clientes-sec-logos', {
-        y: -400,
-        duration: 1.5,
-    }, "-=2");
+    tl2.timeScale(1.5);
 }
 ceoSectionAnimation();
 
@@ -280,28 +289,27 @@ function controlSectionAnimation() {
     });
 
     // Control Section Title
-    tl.from('.cover-book1-ctrl-sec', {
+    tl.to('.cover-book1-ctrl-sec', {
         keyframes:{
-            "0%":{ xPercent: -50, yPercent: 50  },
-            "50%":{ xPercent: 0, yPercent: 0 },
-            "100%":{ scale: 1.1, transformOrigin: "top right", xPercent: -20, yPercent: 20 },
+            "0%":{ xPercent: 0, yPercent: 0, transformOrigin: "top right", scale: 1 },
+            "50%":{ xPercent: -50, yPercent: 50 },
+            "100%":{ xPercent: -20, yPercent: 20, scale: 1.1 }
         },
         duration: 2 
     });
 
     tl.to('.cover-book2-ctrl-sec', {
         keyframes:{
-            "0%":{ rotation: 30, transformOrigin: "0 50%" },
-            "50%":{ rotation: 0 },
-            "100%":{ rotation: 60 },
+            "0%":{ rotation: 0, transformOrigin: "0 50%" },
+            "100%":{ rotation: 30 }
         },
         duration: 2 
     }, "-=2");
 
     tl.to('.cover-book3-ctrl-sec', {
         keyframes:{
-            "0%":{ rotation: -10 },
-            "50%":{ rotation: 10, transformOrigin: "50% 50%", scale: 1, yPercent: 0, xPercent: 0 },
+            "0%":{ rotation: 0, transformOrigin: "50% 50%", scale: 0.8 },
+            "50%":{ rotation: 20, yPercent: 0, xPercent: 0, scale: 1 },
             "100%":{ rotation: 20, yPercent: -5, xPercent: 10 },
         },
         duration: 2 
@@ -318,8 +326,8 @@ function controlSectionAnimation() {
 
     tl.to('.cover-book5-ctrl-sec', {
         keyframes:{
-            "0%":{ rotation: -30 },
-            "50%":{ rotation: 10, transformOrigin: "50% 50%", scale: 1, yPercent: 0, xPercent: 0 },
+            "0%":{ rotation: 0, transformOrigin: "50% 50%" },
+            "50%":{ rotation: 40, scale: 1, yPercent: 0, xPercent: 0 },
             "100%":{ rotation: 20, yPercent: -5, xPercent: 10, scale: 0.8 },
         },
         duration: 2 
@@ -327,8 +335,8 @@ function controlSectionAnimation() {
 
     tl.to('.cover-book6-ctrl-sec', {
         keyframes:{
-            "0%":{ rotation: -10 },
-            "50%":{ rotation: 10, transformOrigin: "50% 50%", scale: 1, yPercent: 0, xPercent: 0 },
+            "0%":{ rotation: 0, transformOrigin: "50% 50%" },
+            "50%":{ rotation: 20, scale: 1, yPercent: 0, xPercent: 0 },
             "100%":{ rotation: 20, yPercent: -15, xPercent: 15 },
         },
         duration: 2 
