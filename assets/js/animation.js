@@ -1,7 +1,14 @@
 // Init Animation On Load
 function initAnimation() {
+    const body = document.querySelector('body');
+
     // Timeline
-    const tl = gsap.timeline({ defaults: { duration: 2, ease: "expo.out" }, });
+    const tl = gsap.timeline({ 
+        defaults: { duration: 2, ease: "expo.out" }, 
+        onComplete: () => {
+            body.style.overflow = 'auto'; // Enable Scroll
+        }
+    });
     
     // h1 Title
     tl.from('h1', { xPercent: -40, opacity: 0 });
@@ -123,48 +130,49 @@ function ourClientGetResultAnimation() {
     const tl = gsap.timeline({ 
         scrollTrigger: { 
             trigger: '.our-clients',
-            start: 'top top',
-            end: '1800 top',
-            scrub: 2,
-            pin: true
-        }
+            start: 'top 85%',
+            end: 'bottom 85%',
+            scrub: 2
+        },
+        ease: "power2.sOut"
     });
 
     // Our Clients Container
-    tl.to(".our-clients-bag", {
+    tl.from(".our-clients-bag", {
         keyframes:{
-            "0%":{ scale: 0.15, yPercent: 200 },
-            "60%":{ yPercent: -8, scale: 0.15 },
-            "90%":{ borderRadius: '50%' },
-            "100%":{ opacity: 1, yPercent: 0, scale: 1.1, borderRadius: '0%' },
+            "0%":{ yPercent: 100, scale: 0.15  },
+            "40%":{ yPercent: 0 },
+            "75%":{ scale: 0.15 },
+            "100%":{ opacity: 1, yPercent: 0, scale: 1.2, borderRadius: '50%' },
         },
         duration: 2.5
     });
 
     // wrapped Container
-    tl.to(".clinets-center", {
+    tl.from(".clinets-center", {
         keyframes:{
-            "0%":{ yPercent: 200, autoAlpha: 1 },
-            "40%":{ yPercent: -7 },
-            "60%":{ scale: 0.5 },
-            "100%":{ scale: 1 },
+            "0%":{ yPercent: 180, scale: 1, autoAlpha: 1 },
+            "40%":{ yPercent: 0 },
+            "45%":{ scale: 0.5 },
+            "100%":{ scale: 1.2 },
         },
-        duration: 2
+        duration: 1
     }, "-=1.5");
 
     // Text Our Clients
-    tl.to(".get-clients", {
+    tl.from(".get-clients", {
         keyframes:{
-            "0%":{ yPercent: 200, autoAlpha: 1 },
-            "40%":{ yPercent: -7 },
-            "60%":{ scale: 0.5 },
-            "100%":{ scale: 1 },
+            "0%":{ yPercent: 180, scale: 1, autoAlpha: 1 },
+            "40%":{ yPercent: 0 },
+            "45%":{ scale: 0.5 },
+            "100%":{ scale: 1.2 },
         },
-        duration: 2
+        duration: 1
     }, "<");
 
     // wrapped Container circle animation
-    tl.to(".clinets-center", { scale: 1.7, ease: "power2.inOut"});
+    tl.to(".clinets-center", { scale: 2.5, ease: "power2.inOut"});
+
 }
 ourClientGetResultAnimation();
 
@@ -225,19 +233,11 @@ function ceoSectionAnimation() {
             start: '60% 40%',
             end: 'bottom 40%',
             onEnter: () => {
-                if (!tl2.isActive()) {
-                    tl2.play(); // if the timeline isn't already playing, play it
-                } else {
-                    tl2.resume();
-                }
+                tl2.play(); // if the timeline is reversed, play it
             },
-            onLeave: () => {
-                if (tl2.reversed()) {
-                    tl2.play(); // if the timeline is reversed, play it
-                } else {
-                    tl2.reverse();
-                }
-            }
+            onLeaveBack: () => {
+                tl2.reverse();
+            } // if the timeline is not reversed (i.e. playing forward), reverse it
         }
     });
 
