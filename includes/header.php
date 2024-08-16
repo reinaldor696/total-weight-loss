@@ -28,7 +28,7 @@
     <!-- Header !-->
     <header id="header">
         <div class="container-fluid px-5">
-            <div class="row">
+            <div id="home-banner-cont-child" class="row">
                 <!-- Navigation !-->
                 <nav id="navbar-id" class="navbar navbar-expand-lg navbar-light">
 

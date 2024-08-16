@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow: auto;
 }
 #img-logo-header {
     width: calc(63 / 1920 * 100vw);

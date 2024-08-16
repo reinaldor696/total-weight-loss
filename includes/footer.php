@@ -3,7 +3,7 @@
   <div class="container-fluid px-5">
     <div class="row">
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 footer-logo-cont">
         <div class="footer-column fstclumn">
           <img src="assets/images/logo-footer.webp" class="img-fluid img-footer-logo" alt="Footer Logo" />
           <p class="par-footer-logo">Turning Simple Recipes Into Results…Crafted to perfection, making weight loss easy for you.</p>
@@ -95,7 +95,7 @@
 <script src='librarys/gsap/TextPlugin.min.js'></script>
 
 <!--=============== Header Animation JS ===============-->
-<script src="assets/js/animation.js"></script>
+<script src="assets/js/animation.j"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

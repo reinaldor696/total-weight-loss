@@ -5,10 +5,10 @@ $title = "Home";
 <!-- Home Banner !-->
 <section class="home-banner">
    <div class="container-fluid px-5">
-      <div class="row">
+      <div id="home-banner-cont-child" class="row">
          <div class="banner-captions">
             <h1 class="banner-heading">Turning SIMPLE</h1>
-            <br />
+            <br class='display-off' />
             <h2 class="banner-heading">RECIPES into RESULTS</h2>
             <div class="col-lg-4">
                <div class="banner-text">
@@ -81,7 +81,7 @@ $title = "Home";
 <!-- End Make It Simple !-->
 <!-- Download Total !-->
 <section class="download-total">
-   <div class="container-fluid px-5">
+   <div  class="container-fluid px-5 download-child">
       <div class="row total-captions">
          <div class="col-lg-4 col-sm-6 col-xs-6">
             <div class="mobile-img">
