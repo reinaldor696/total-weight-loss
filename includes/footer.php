@@ -95,7 +95,8 @@
 <script src='librarys/gsap/TextPlugin.min.js'></script>
 
 <!--=============== Header Animation JS ===============-->
-<script src="assets/js/animation.j"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/mobile-animation.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

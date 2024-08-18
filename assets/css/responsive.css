@@ -1098,16 +1098,17 @@
     }
     #mobile {
         width: 50%;
+        position: absolute;
         top: 90px;
-        right: -70%;
-
+        right: -5%;
+        left: unset;
     }
     img.img-fluid.banner-2 {
         right: -120px;
         top: 60px;
     }
     h1.banner-heading {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
         line-height: 100%;
     }
     .white-border-btn {
@@ -1174,9 +1175,9 @@
         height: 100vh;
     }
     .mobile-img {
-        width: 65%;
+        width: 60%;
         position: relative;
-        left: -6%;
+        left: 2%;
 
     }
     .mobile-right {
@@ -1184,9 +1185,11 @@
     }
     .mobile-right h2 {
         position: absolute;
-        top: -110%;
-        left: 48%;
-        width: fit-content;
+        top: -100%;
+        left: 55%;
+        font-size: 2rem;
+        line-height: 90%;
+        width: 45%;
     }
     .mobile-lists {
         padding: 0 10% 10% 10%;
@@ -1280,12 +1283,8 @@
         line-height: 30px;
     }
     .mobile-right h2 span{
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: normal;
-    }
-    .mobile-right h2 {
-        font-size: 2.625rem;
-        line-height: 90%;
     }
     .ceo-inner .row {
         flex-direction: column-reverse;
@@ -1391,6 +1390,12 @@
     }
     .intro-btn a {
         font-size: 1rem;
+    }
+    button.accordion-button.collapsed:after {
+        font-size: 1.8rem;
+    }
+    .total-captions {
+        margin: 0 !important;
     }
 }
 
