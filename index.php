@@ -199,7 +199,7 @@ $title = "Home";
    </div>
 
    <div id="clientes-sec-logos" class="container-fluid px-5">
-      <div class="row cl-wrape">
+      <div class="row cl-wrape clientes-sec-logos-child">
          <div id="sec-logo1" class="col-lg-3 col-sm-6 col-xs-6">
             <div class="clients-box">
                <img src="assets/images/1.webp" class="img-fluid" alt="Image" />

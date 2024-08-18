@@ -1404,7 +1404,7 @@
     }
     .clients-box {
         height: auto;
-        width: 35%;
+        width: 100%;
     }
     .clients-box h6 {
         font-size: 0.8rem;
@@ -1414,20 +1414,29 @@
     .clients-box p {
         font-size: 0.5rem;
     }
+    #sec-logo1 {
+        width: 35%;
+    }
     #sec-logo2 {
         position: absolute;
-        right: -55%;
+        right: 10%;
+        width: 35%;
     }
     #sec-logo3 {
         position: absolute;
-        top: 25%;
+        top: 180%;
+        width: 35%;
     }
     #sec-logo4 {
         position: absolute;
-        top: 25%;
-        right: -55%;
+        top: 180%;
+        right: 10%;
+        width: 35%;
     }
     #clientes-sec-logos {
+        position: relative;
+    }
+    .clientes-sec-logos-child {
         position: relative;
     }
 }
