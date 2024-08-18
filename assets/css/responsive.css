@@ -1427,5 +1427,8 @@
         top: 25%;
         right: -55%;
     }
+    #clientes-sec-logos {
+        position: relative;
+    }
 }
 

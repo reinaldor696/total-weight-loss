@@ -248,8 +248,6 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         tl2.to('#clientes-sec-logos', { y: -400, duration: 1, overwrite: 'auto' }, 0);
 
         tl2.timeScale(1.5);
-
-        GSDevTools.create({animation:tl})
     }
     ceoSectionAnimation();
 
@@ -352,13 +350,15 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         });
 
         // img-footer-logo and col-footer-text
-        tl.from('.img-footer-logo, .col-footer-text', { y: 200, duration: 1 });
+        tl.from('.img-footer-logo', { y: 200, duration: 1 });
 
         // par-footer-logo
         tl.from('.par-footer-logo', { y: 200, duration: 1 }, "-=0.8");
 
+        tl.from('.col-footer-text', { y: 200, duration: 1 }, "-=0.8");
+
         // bot-footer-animation
-        tl.from('.bot-footer-animation', { y: 100, duration: 1 }, "-=0.8");
+        tl.from('.bot-footer-animation', { y: 200, duration: 1 }, "-=0.8");
     }
     footerAnimation();
 }
