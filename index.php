@@ -200,28 +200,28 @@ $title = "Home";
 
    <div id="clientes-sec-logos" class="container-fluid px-5">
       <div class="row cl-wrape">
-         <div class="col-lg-3 col-sm-6 col-xs-6">
+         <div id="sec-logo1" class="col-lg-3 col-sm-6 col-xs-6">
             <div class="clients-box">
                <img src="assets/images/1.webp" class="img-fluid" alt="Image" />
                <h6>lecom</h6>
                <p>Medical Student</p>
             </div>
          </div>
-         <div class="col-lg-3 col-sm-6 col-xs-6">
+         <div id="sec-logo2" class="col-lg-3 col-sm-6 col-xs-6">
             <div class="clients-box">
                <img src="assets/images/2.webp" class="img-fluid" alt="Image" />
                <h6>Co-Founder Muscle Dummies</h6>
                <p>Head of Nutrition</p>
             </div>
          </div>
-         <div class="col-lg-3 col-sm-6 col-xs-6">
+         <div id="sec-logo3" class="col-lg-3 col-sm-6 col-xs-6">
             <div class="clients-box">
                <img src="assets/images/3.webp" class="img-fluid" alt="Image" />
                <h6>Culinary Medicine</h6>
                <p>Specialist</p>
             </div>
          </div>
-         <div class="col-lg-3 col-sm-6 col-xs-6">
+         <div id="sec-logo4" class="col-lg-3 col-sm-6 col-xs-6">
             <div class="clients-box">
                <img src="assets/images/4.webp" class="img-fluid" alt="Image" />
                <h6>Certified Student</h6>

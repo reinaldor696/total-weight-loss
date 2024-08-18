@@ -91,10 +91,9 @@ if (window.matchMedia("(max-width: 480px)").matches) {
             }, 
             scrollTrigger: {
                 trigger: '.mobile-img',
-                start: 'top 35%',
-                end: '1430 35%',
-                scrub: 2, 
-                markers: true
+                start: 'top 75%',
+                end: '900 75%',
+                scrub: 2
             }
         });
 
@@ -120,13 +119,11 @@ if (window.matchMedia("(max-width: 480px)").matches) {
             delay: 0.5,
             scrollTrigger: {
                 trigger: '.mobile-right',
-                start: 'top 38%',
-                end: 'center 38%',
+                start: 'top 89%',
+                end: 'center 89%',
                 scrub: true
             }
         });
-
-        //GSDevTools.create({animation:tl})
     }
     initScroll();
 
@@ -136,8 +133,8 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         const tl = gsap.timeline({ 
             scrollTrigger: { 
                 trigger: '.our-clients',
-                start: 'top 85%',
-                end: 'bottom 85%',
+                start: 'top 65%',
+                end: 'bottom 65%',
                 scrub: 2
             },
             ease: "power2.sOut"
@@ -157,38 +154,34 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         // wrapped Container
         tl.from(".clinets-center", {
             keyframes:{
-                "0%":{ yPercent: 180, scale: 1, autoAlpha: 1 },
+                "0%":{ yPercent: 200, scale: 1, autoAlpha: 1 },
                 "40%":{ yPercent: 0 },
-                "45%":{ scale: 0.5 },
-                "100%":{ scale: 1.2 },
             },
-            duration: 1
+            duration: 2.5
         }, "-=1.5");
 
         // Text Our Clients
         tl.from(".get-clients", {
             keyframes:{
-                "0%":{ yPercent: 180, scale: 1, autoAlpha: 1 },
+                "0%":{ yPercent: 520, scale: 1, autoAlpha: 1 },
                 "40%":{ yPercent: 0 },
-                "45%":{ scale: 0.5 },
-                "100%":{ scale: 1.2 },
+                "100%":{ yPercent: 0 }
             },
-            duration: 1
+            duration: 2.5
         }, "<");
 
         // wrapped Container circle animation
-        tl.to(".clinets-center", { scale: 2.5, ease: "power2.inOut"});
-
+        tl.to(".clinets-center", { scale: 2.5, ease: "power2.inOut"}, '-=1');
     }
-    //ourClientGetResultAnimation();
+    ourClientGetResultAnimation();
 
     // Testimonials Animation
     function testimonialsAnimation() {
         const tl = gsap.timeline({ 
             scrollTrigger: { 
                 trigger: '.testimonial-sec',
-                start: 'top 300',
-                end: 'top 300',
+                start: 'top 30%',
+                end: 'top 30%'
             },
             ease: "expo"
         });
@@ -236,8 +229,8 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         let tl2 = gsap.timeline({
             scrollTrigger : {
                 trigger: '.ceo-sec',
-                start: '60% 40%',
-                end: 'bottom 40%',
+                start: '60% 50%',
+                end: 'bottom 50%',
                 onEnter: () => {
                     tl2.play(); // if the timeline is reversed, play it
                 },
@@ -248,13 +241,15 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         });
 
         // CEO Text and Image Animation 
-        tl2.to('.ceo-text, .ceo-img', { y: -200, opacity: 0, duration: 1, overwrite: 'auto' });
+        tl2.to('.ceo-text, .ceo-img', { y: -450, opacity: 0, duration: 1, overwrite: 'auto' });
         // CEO Johnny Track Animation
-        tl2.to('.ceojohnny', { y: -600, duration: 1, overwrite: 'auto' }, 0);
+        tl2.to('.ceojohnny', { y: -500, duration: 1, overwrite: 'auto' }, 0);
         // CEO Clientes Logos Animation
         tl2.to('#clientes-sec-logos', { y: -400, duration: 1, overwrite: 'auto' }, 0);
 
         tl2.timeScale(1.5);
+
+        GSDevTools.create({animation:tl})
     }
     ceoSectionAnimation();
 

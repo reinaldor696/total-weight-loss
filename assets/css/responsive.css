@@ -1277,10 +1277,15 @@
         font-size: 16px;
         padding: 10px 25px;
     }
+    .clinets-center {
+        scale: 0.4 !important;
+        max-width: none;
+    }
     h2.get-clients {
-        height: 280px;
-        font-size: 30px;
-        line-height: 30px;
+        height: auto;
+        width: 36%;
+        font-size: 3.5rem;
+        line-height: 85%;
     }
     .mobile-right h2 span{
         font-size: 1rem;
@@ -1316,7 +1321,7 @@
         padding: 10px 0;
     }
     h2.control-heading{
-        font-size: 2.25rem;
+        font-size: 2rem;
         line-height: 92%;
     }
     .control-btn a.white-border-btn{
@@ -1396,6 +1401,31 @@
     }
     .total-captions {
         margin: 0 !important;
+    }
+    .clients-box {
+        height: auto;
+        width: 35%;
+    }
+    .clients-box h6 {
+        font-size: 0.8rem;
+        margin-top: 20px;
+        line-height: normal;
+    }
+    .clients-box p {
+        font-size: 0.5rem;
+    }
+    #sec-logo2 {
+        position: absolute;
+        right: -55%;
+    }
+    #sec-logo3 {
+        position: absolute;
+        top: 25%;
+    }
+    #sec-logo4 {
+        position: absolute;
+        top: 25%;
+        right: -55%;
     }
 }
 
