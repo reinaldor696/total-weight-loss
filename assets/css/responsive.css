@@ -221,6 +221,9 @@
     }
     .banner-captions {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     img.img-fluid.banner-1,
     img.img-fluid.banner-2 {
@@ -659,7 +662,8 @@
         bottom: -280px;
     }
     .intro-wrap {
-        width: 98% !important;
+        width: 80% !important;
+        margin: 5% auto;
     }
     .mobile-right h2 span {
         font-size: 35px !important;
@@ -750,6 +754,13 @@
     .accordion-button::after {
         height: auto;
         width: auto;
+    }
+    #mobile {
+        width: 50%;
+        top: 30px;
+    }
+    .intro-btn a {
+        font-size: 0.875rem;
     }
 }
 
