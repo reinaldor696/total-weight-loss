@@ -61,11 +61,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">DUMMY SUPPS</a>
+                                <a class="nav-link" href="contact.php">contact us</a>
                             </li>
 
                             <li class="nav-item mr-lg-2">
-                                <a class="nav-link" href="contact.php">contact us</a>
+                                <a class="nav-link" href="#">DUMMY SUPPS</a>
                             </li>
 
                         </ul>
