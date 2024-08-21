@@ -90,11 +90,13 @@ function aboutUsAnimation() {
     });
 
     // left about
-    tl.from('.par-about-us', { xPercent: -50, opacity: 0 });
+    tl.from('.par-about-us', { xPercent: 20, opacity: 0 });
 
     // right about
-    tl.from('.subtitle-about-us', { xPercent:-50, opacity: 0 }, '<');
+    tl.from('.subtitle-about-us', { xPercent: 20, opacity: 0 }, '<');
 
     tl.from('.abt-ceo', { scale: 0.7, transformOrigin: 'bottom' }, '<');
+
+    tl.from('.ceo-name-animation', { yPercent: 50, opacity: 0 }, '<');
 }
 aboutUsAnimation();
