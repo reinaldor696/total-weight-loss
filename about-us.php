@@ -8,8 +8,8 @@ $title = "About Us";
         <div class="row">
             <div class="col-lg-6">
                 <h1>About Us</h1>
-                <p>The <strong>Total Weight Loss Cookbook</strong> was created to empower you to take control of your life, health, and happiness. I am proud to have helped thousands of people improve their physical health, weight management, and emotional well being through these recipes. This cookbook was designed to assist individuals in making healthier food choices and positively contribute to combating the ongoing health crisis.</p>
-                <h6>“I believe that everyone deserves access to <strong>nutritious meals,</strong> no matter your income or background”.</h6>
+                <p class='par-about-us'>The <strong>Total Weight Loss Cookbook</strong> was created to empower you to take control of your life, health, and happiness. I am proud to have helped thousands of people improve their physical health, weight management, and emotional well being through these recipes. This cookbook was designed to assist individuals in making healthier food choices and positively contribute to combating the ongoing health crisis.</p>
+                <h6 class='subtitle-about-us'>“I believe that everyone deserves access to <strong>nutritious meals,</strong> no matter your income or background”.</h6>
             </div>
             <div class="col-lg-6">
                 <div class="abt-ceo">

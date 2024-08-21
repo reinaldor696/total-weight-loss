@@ -98,14 +98,12 @@
 <!--=============== Header Animation JS ===============-->
 
 <script src="assets/js/animation.js"></script>
-
 <script src="assets/js/large-tablet-animation.js"></script>
 <script src="assets/js/tablet-animation.js"></script>
 <script src="assets/js/mobile-animation.js"></script>
 <script src="assets/js/internal-pages-animation.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/header-scroll.js"></script>
-
 
 </body>
 

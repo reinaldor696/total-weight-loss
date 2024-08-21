@@ -13,10 +13,10 @@ $title = "Shipping Information";
             </div>
         </div>
         <div class="row shippingsrow">
-            <div class="col-lg-6">
+            <div class="col-lg-6 shipping-heading-cont">
                 <h6 class="shipping-heading">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <strong>sed diam nonummy,</strong> nibh euismod tincidunt ut.</h6>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 shipping-par-cont">
                 <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex.</p>
                 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex.</p>

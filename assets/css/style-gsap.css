@@ -280,3 +280,8 @@ button.accordion-button.collapsed:after {
     width: auto;
     height: auto;
 }
+
+form.contact-form {
+    display: flex;
+    flex-direction: column;
+}

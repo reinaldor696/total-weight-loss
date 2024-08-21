@@ -19,7 +19,7 @@ $title = "Home";
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row counting-list-container">
             <div class="col-lg-4">
                 <div class="counting-list">
                     <h6>01</h6>

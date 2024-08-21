@@ -10,7 +10,7 @@ $title = "Shop";
                 <h1 class="shop-heading">Products</span></h1>
                 <div class="shop-wrap">
                     <div class="shop-column">
-                        <a href="app.php">
+                        <a href="cook-book.php">
                             <div class="shop-img">
                                 <img src="assets/images/s1.webp" class="img-fluid" />
                             </div>
@@ -28,7 +28,7 @@ $title = "Shop";
                         </a>
                     </div>
                     <div class="shop-column">
-                        <a href="cook-book.php">
+                        <a href="app.php">
                             <div class="shop-img">
                                 <img src="assets/images/s2.webp" class="img-fluid" />
                             </div>
