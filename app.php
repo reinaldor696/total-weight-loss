@@ -137,7 +137,7 @@ $title = "Download Total Weight Loss App";
 <!-- End Detail Product Section !-->
 <!-- Product Reviews Section !-->
 <section class="product-review-sec">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 product-rew-cont">
         <div class="row reiviews-top">
             <div class="col-lg-6">
                 <div class="reviews-heading">
@@ -344,7 +344,7 @@ $title = "Download Total Weight Loss App";
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-sm-6 add-rev-btn">
                     <div class="reivew-button">
                         <a href="#" class="revibtn">add a review</a>
                     </div>

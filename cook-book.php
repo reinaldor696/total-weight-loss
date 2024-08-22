@@ -4,42 +4,42 @@ $title = "Download Total Weight Loss App";
 <?php include 'includes/header.php'; ?>
 <!-- Detail Product Section !-->
 <section class="single-detail">
-    <div class="container-fluid px-5">
-        <div class="row">
-            <div class="col-lg-6">
+    <div class="container-fluid px-5 single-details-cont">
+        <div class="row single-details-cont-child">
+            <div class="col-lg-6 single-details-cont-child-col">
                 <div class="product-thumb-single">
                     <div class="prd-wraping">
                         <div class="prd-small">
                             <div class="product-nav">
 
-                                <div>
+                                <div class="product-img-cont">
                                     <div class="prdthumb-nav">
                                         <img class="prd-small-img img-fluid" src="assets/images/cookbook-1.webp" alt="image">
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="product-img-cont">
                                     <div class="prdthumb-nav">
                                         <img class="prd-small-img img-fluid" src="assets/images/cookbook-2.webp" alt="image">
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="product-img-cont">
                                     <div class="prdthumb-nav">
                                         <img class="prd-small-img img-fluid" src="assets/images/cookbook-3.webp" alt="image">
                                     </div>
                                 </div>
-                                <div>
+                                <div class="product-img-cont">
                                     <div class="prdthumb-nav">
                                         <img class="prd-small-img img-fluid" src="assets/images/cookbook-4.webp" alt="image">
                                     </div>
                                 </div>
-                                <div>
+                                <div class="product-img-cont">
                                     <div class="prdthumb-nav">
                                         <img class="prd-small-img img-fluid" src="assets/images/cookbook-5.webp" alt="image">
                                     </div>
                                 </div>
-                                <div>
+                                <div class="product-img-cont">
                                     <div class="prdthumb-nav">
                                         <img class="prd-small-img img-fluid" src="assets/images/cookbook-6.webp" alt="image">
                                     </div>
@@ -86,7 +86,7 @@ $title = "Download Total Weight Loss App";
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 single-details-cont-child-col2">
                 <div class="ptoduct-detail-text">
                     <h6 class="product-title">Total Weight Loss Cookbook</h6>
                     <div class="star-rating">
@@ -136,7 +136,7 @@ $title = "Download Total Weight Loss App";
 <!-- End Detail Product Section !-->
 <!-- Product Reviews Section !-->
 <section class="product-review-sec">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 product-rew-cont">
         <div class="row reiviews-top">
             <div class="col-lg-6">
                 <div class="reviews-heading">
@@ -343,7 +343,7 @@ $title = "Download Total Weight Loss App";
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 custo-rev-cont">
                     <div class="reivew-button">
                         <a href="#" class="revibtn">add a review</a>
                     </div>

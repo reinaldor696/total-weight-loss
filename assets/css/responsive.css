@@ -210,6 +210,30 @@
 }
 
 @media  screen and (min-width: 768px) and (max-width: 1024px) {
+    /* menu */
+    #navbarTogglerDemo03 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: #021A6E;
+        left: 0;
+    }
+    .navbar-nav {
+        padding: 0 50px;
+        display: flex;
+        gap: 18px;
+        flex-direction: column !important;
+        width: 85%;
+    }
+    .navbar-mobile-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
     .shop-wrap {
         flex-direction: column;
     }
@@ -397,18 +421,15 @@
     }
     .product-nav {
         height: unset;
-    }
-    .product-nav {
-        max-width: 100%;
+        max-width: unset;
+        overflow-x: auto;
+        overflow-y: unset;
+        width: 100%;
+        height: 210px;
     }
     .prd-wraping {
         display: flex;
         flex-direction: column-reverse;
-    }
-    .prdthumb-nav {
-        max-width: 100%;
-        height: unset;
-        margin: 15px 5px;
     }
     h6.product-title {
         font-size: 48px;
@@ -595,9 +616,6 @@
         z-index: 9999;
         display: block !important;
     }
-    #navbarTogglerDemo03 {
-        display: none !important;
-    }
     button.navbar-toggler,
     .navbar-toggler:focus {
         border: none;
@@ -762,9 +780,95 @@
     .intro-btn a {
         font-size: 0.875rem;
     }
+    .product-thumb-single {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* About us */
+    .ceojohnny {
+        margin-top: -300px;
+    }
+    .about-us-banner p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .about-us-banner h6 {
+        font-size: 1.5rem;
+        padding-top: 40px;
+    }
+
+    /* Single details */
+    .prdthumb-nav {
+        max-width: unset;
+        height: auto;
+        width: 100%;
+        margin: 15px 0%;
+        overflow-x: auto;
+    }
+    .product-img-cont {
+        width: 16% !important;
+        height: auto;
+    }
+    .single-details-cont-child {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    h6.product-title {
+        font-size: 2.5rem;
+    }
+    .single-details-cont-child { 
+        width: 100%;
+    }
 }
 
 @media  screen and (min-width: 481px) and (max-width: 767px) {
+     /* menu */
+    #navbarTogglerDemo03 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: #021A6E;
+        left: 0;
+    }
+    .navbar-nav {
+        padding: 0 50px;
+        display: flex;
+        gap: 18px;
+        flex-direction: column !important;
+        width: 85%;
+    }
+    .navbar-mobile-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .header-socials {
+        display: block;
+        margin-top: 50px;
+    }
+    li.nav-item.mobilelogo {
+        display: block;
+    }
+    nav.navbar.navbar-expand-lg li.nav-item a {
+        color: white;
+        font-size: 1rem;
+        border: unset;
+        border-radius: unset;
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        padding: 10px 0;
+        width: 100%;
+        margin: 0 8px;
+    }
+    .navbar-toggler {
+        z-index: 100;
+    }
     img.img-fluid.banner-2 {
         right: -190px;
     }
@@ -1088,9 +1192,299 @@
         scale: 0.4 !important;
         max-width: none;
     }
+
+    /* Internal Pages */
+
+    /* cook book pendiente**** 
+    .slick-track {
+        display: flex;
+        flex-direction: row;
+    }
+    .prd-wraping {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .product-nav {
+        height: auto;
+        max-width: 100%;
+    }
+        
+
+    .prdthumb-nav {
+        max-width: 100%;
+        height: unset;
+        margin: 15px 5px;
+    }
+
+    .product-nav {
+        height: unset;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .product-thumb-single {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .product-nav {
+        max-width: 70%;
+    }
+    .prd-wraping {
+        left: 9%;
+        position: relative;
+    }
+    */
+
+    /* Term of services */
+
+    .counting-list h6 {
+        font-size: 5rem;
+    }
+    .counting-list p {
+        font-size: 2rem;
+    }
+    .terms-sec-2 {
+        padding: 40px 0;
+    }
+    .sec2-text h6 {
+        font-size: 2rem;
+    }
+    h6.terms-heading {
+        font-size: 2.5rem;
+    }
+    .serives-text {
+        padding-top: 30px;
+    }
+
+    /* Shipping information */
+    .shippingsrow {
+        padding-top: 50px;
+    }
+    .shipping-info-banner h1 {
+        font-size: 3rem;
+        line-height: 100%;
+    }
+    h6.shipping-heading {
+        font-size: 2.5rem;
+    }
+    .shippingsrow p {
+        font-size: 1.2rem;
+    }
+    .shipping-sec-2 {
+        padding: 40px 5%;
+    }
+    .shiping-box h6 {
+        font-size: 4rem;
+    }
+    .shiping-box p {
+        font-size: 2.5rem;
+    }
+    .shiping-lists {
+        padding: 30px 0;
+    }
+
+    /* Contact */
+    .con-left h1 {
+        font-size: 3rem;
+        line-height: 100%;
+    }
+    form.contact-form{
+        padding-top: 50px;
+    }
+    .con-right {
+        padding-top: 40px;
+    }
+    .contact-form .fontact-field {
+        font-size: 1.5rem;
+    }
+
+    /* About us */
+    .about-us-banner p {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .about-us-banner h6 {
+        font-size: 2rem;
+    }
+    .abt-prd-wrap h5 {
+        font-size: 3rem;
+    }
+    .abt-prd-wrap p {
+        font-size: 1.125rem;
+    }
+
+    /* Cook book section */
+    h6.product-title {
+        font-size: 2rem;
+    }
+    .review-count {
+        font-size: 1.75rem;
+    }
+    .prd-price {
+        font-size: 2rem;
+    }
+    .reviews-heading h6 {
+        font-size: 2rem;
+    }
+    .reviews-heading h5 {
+        font-size: 3.125rem;
+    }
+    .prd-review-left h6 {
+        font-size: 6rem;
+    }
+    h5 {
+    font-size: 1.5rem;
+    }
+    .addreview-text h5 {
+        font-size: 3.5rem;
+    }
+    .formcontrol { 
+        font-size: 0.9rem;
+    }
+    .formcontrol::placeholder { 
+        font-size: 0.9rem;
+    }
+    .add-review {
+        padding: 15px 2%;
+    }
+    button.form-btn {
+        font-size: 1.5rem;
+    }
+    select.form-select {
+        width: 165px;
+    }
+    ul.dd-filters {
+        gap: 12%;
+    }
+    a.revibtn {
+        font-size: 1.5rem;
+    }
+    .customer-heaiding h6 {
+        font-size: 2.25rem;
+    }
+    .customer-heaiding p {
+        font-size: 1.25rem;
+        width: 130%;
+    }
+    .customer-text h6 {
+        font-size: 1.563rem;
+        width: 145%;
+    }
+    .customer-text p {
+        font-size: 1.188rem;
+        width: 138%;
+        margin-top: 30px;
+    }
+    .customer-review-riting {
+        display: flex;
+        align-items: center;
+        gap: 3%;
+        justify-content: flex-start;
+    }
+    .customer-review-riting h6 {
+        font-size: 3.438rem;
+    }
+    ul.five-stars li {
+        font-size: 1.25rem;
+    }
+    .reviews-rating {
+        gap: 5%;
+    }
+    .customer-heaiding h6 {
+        width: 153%;
+    }
+    h5.rating-date {
+        text-align: unset;
+        padding-top: 8px;
+    }
+    .product-review-sec {
+        padding-bottom: 50px;
+    }
+    .product-img-cont {
+        width: 100%;
+    }
+    .product-nav {
+        max-width: unset;
+        height: unset;
+        width: 100%;
+    }
+    .product-thumb-single {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .prdthumb-nav {
+        max-width: unset;
+        height: auto;
+        margin: 15px auto;
+        overflow-x: auto;
+    }
+    .single-details-cont-child {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .prd-wraping {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 @media  screen and (max-width: 480px){
+     /* menu */
+    #navbarTogglerDemo03 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: #021A6E;
+        left: 0;
+    }
+    .navbar-nav {
+        padding: 0 50px;
+        display: flex;
+        gap: 18px;
+        flex-direction: column !important;
+        width: 85%;
+    }
+    .navbar-mobile-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .header-socials {
+        display: block;
+        margin-top: 50px;
+    }
+    li.nav-item.mobilelogo {
+        display: block;
+    }
+    nav.navbar.navbar-expand-lg li.nav-item a {
+        color: white;
+        font-size: 1rem;
+        border: unset;
+        border-radius: unset;
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        padding: 10px 0;
+        width: 100%;
+        margin: 0 8px;
+    }
+    .navbar-toggler {
+        z-index: 100;
+    }
+    .shop-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .shop-banner {
+        padding-top: 100px;
+    }
+    .shop-column {
+        width: 100%;
+    }
     .display-off {
         display: none;
     }
@@ -1296,9 +1690,6 @@
     h2.get-clients {
         height: 400px;
     }
-    .howmany ul {
-        top: 52%;
-    }
     button.form-btn {
         font-size: 16px;
         padding: 10px 25px;
@@ -1464,6 +1855,246 @@
     }
     .clientes-sec-logos-child {
         position: relative;
+    }
+
+    /* Internal Pages */
+
+    /* Term of services */
+
+    .counting-list h6 {
+        font-size: 4rem;
+    }
+    .counting-list p {
+        font-size: 1.8rem;
+    }
+    .terms-sec-2 {
+        padding: 40px 0;
+    }
+    .sec2-text h6 {
+        font-size: 2rem;
+    }
+    h6.terms-heading {
+        font-size: 1.8rem;
+    }
+    .serives-text {
+        padding-top: 30px;
+    }
+    .terms-services-banner {
+        padding: 100px 0 50px 0;
+    }
+
+    /* Shipping information */
+    .shippingsrow {
+        padding-top: 50px;
+    }
+    .shipping-info-banner h1 {
+        font-size: 2.5rem;
+        line-height: 100%;
+    }
+    h6.shipping-heading {
+        font-size: 2rem;
+    }
+    .shippingsrow p {
+        font-size: 1.2rem;
+    }
+    .shipping-sec-2 {
+        padding: 40px 0;
+    }
+    .shiping-box h6 {
+        font-size: 3rem;
+    }
+    .shiping-box p {
+        font-size: 1.8rem;
+    }
+    .shiping-lists {
+        padding: 30px 0;
+    }
+
+    /* Contact */
+    .con-left {
+        padding-top: 100px;
+    }
+    .con-left h1 {
+        font-size: 3rem;
+        line-height: 100%;
+    }
+    form.contact-form{
+        padding-top: 50px;
+    }
+    .con-right {
+        padding-top: 40px;
+    }
+    .contact-form .fontact-field {
+        font-size: 1.5rem;
+    }
+
+    /* About us */
+    .about-us-banner {
+        padding: 100px 0 0 0;
+    }
+
+    .about-us-banner p {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .about-us-banner h6 {
+        font-size: 1.5rem;
+        padding-top: 50px;
+    }
+    .abt-prd-wrap h5 {
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+    .abt-prd-wrap p {
+        font-size: 1.125rem;
+    }
+    .ceojohnny .marquee {
+        height: 241px;
+    }
+    .abt-prd-wrap {
+        margin-top: 50px;
+    }
+
+    /* Cook book section */
+    .single-detail {
+        padding-top: 100px;
+    }
+    h6.product-title {
+        font-size: 2rem;
+    }
+    .review-count {
+        font-size: 1.3rem;
+    }
+    .prd-price {
+        font-size: 2rem;
+    }
+    .reviews-heading h6 {
+        font-size: 2rem;
+    }
+    .reviews-heading h5 {
+        font-size: 3.125rem;
+    }
+    .prd-review-left h6 {
+        font-size: 2.5rem;
+    }
+    h5 {
+    font-size: 1.5rem;
+    }
+    .addreview-text h5 {
+        font-size: 3rem;
+    }
+    .formcontrol { 
+        font-size: 0.7rem;
+    }
+    .formcontrol::placeholder { 
+        font-size: 0.7rem;
+    }
+    .add-review {
+        padding: 15px 2%;
+    }
+    button.form-btn {
+        font-size: 1rem;
+    }
+    select.form-select {
+        width: 120px;
+    }
+    ul.dd-filters {
+        gap: 6%;
+    }
+    a.revibtn {
+        font-size: 1rem;
+    }
+    .customer-heaiding h6 {
+        font-size: 2.25rem;
+    }
+    .customer-heaiding p {
+        font-size: 1.25rem;
+        width: 130%;
+    }
+    .customer-text h6 {
+        font-size: 1.563rem;
+        width: 145%;
+    }
+    .customer-text p {
+        font-size: 1.188rem;
+        width: 138%;
+        margin-top: 30px;
+    }
+    .customer-review-riting {
+        display: flex;
+        align-items: center;
+        gap: 3%;
+        justify-content: flex-start;
+    }
+    .customer-review-riting h6 {
+        font-size: 3.438rem;
+    }
+    ul.five-stars li {
+        font-size: 1.25rem;
+    }
+    .reviews-rating {
+        gap: 5%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .customer-heaiding h6 {
+        width: 153%;
+    }
+    h5.rating-date {
+        text-align: unset;
+        padding-top: 8px;
+    }
+    .product-review-sec {
+        padding-bottom: 50px;
+    }
+    .product-img-cont {
+        width: 100%;
+    }
+    .product-nav {
+        max-width: unset;
+        height: unset;
+        width: 100%;
+    }
+    .product-thumb-single {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .prdthumb-nav {
+        max-width: unset;
+        height: auto;
+        margin: 15px auto;
+        overflow-x: auto;
+    }
+    .single-details-cont-child {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .single-details-cont {
+        padding: 0 1rem !important;
+    }
+    .prd-wraping {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .product-rew-cont {
+        padding: 0 1rem !important;
+    }
+    .customer-reviews {
+        padding: 40px 3% !important;
+    }
+    .reivew-button {
+        text-align: center;
+    }
+    ul.dd-filters {
+        display: flex;
+        justify-content: center;
+    }
+    .custo-rev-cont {
+        margin-top: 20px;
+    }
+    .add-rev-btn {
+        margin-top: 20px;
     }
 }
 

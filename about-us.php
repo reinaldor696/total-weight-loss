@@ -23,7 +23,7 @@ $title = "About Us";
 <!-- End About Us Banner !--> 
 <!-- CEO Johnny !--> 
 <section class="ceojohnny">
-    <div class="marquee">
+    <div class="marquee marquee-about-us">
         <div class="track">
             <div class="content ceo-name-animation">&nbsp;Johnny Hadac
                 <svg width="228" height="6" viewBox="0 0 228 6" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -42,39 +42,40 @@
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                        <div class="navbar-mobile-content">
+                            <ul id='navbar-header' class="navbar-nav mobileNavBar">
+                                <li class="nav-item mobilelogo">
+                                    <a class="nav-link" href="index.php"><img class="img-fluid" src="assets/images/m-logo.webp" alt="Mobile Logo" /></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php">Home</a>
+                                </li>
 
-                        <ul id='navbar-header' class="navbar-nav mobileNavBar">
-                            <li class="nav-item mobilelogo">
-                                <a class="nav-link" href="index.php"><img class="img-fluid" src="assets/images/m-logo.webp" alt="Mobile Logo" /></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php">Home</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="shop.php">shop</a>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="shop.php">shop</a>
+                                </li>
 
-                            </li>
+                                <li class="nav-item mr-lg-2">
+                                    <a class="nav-link" href="#">total app</a>
+                                </li>
 
-                            <li class="nav-item mr-lg-2">
-                                <a class="nav-link" href="#">total app</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.php">contact us</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.php">contact us</a>
-                            </li>
+                                <li class="nav-item mr-lg-2">
+                                    <a class="nav-link" href="#">DUMMY SUPPS</a>
+                                </li>
 
-                            <li class="nav-item mr-lg-2">
-                                <a class="nav-link" href="#">DUMMY SUPPS</a>
-                            </li>
-
-                        </ul>
-                        <div class="header-socials">
-                            <ul class="social_media">
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                             </ul>
+                            <div class="header-socials">
+                                <ul class="social_media">
+                                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
