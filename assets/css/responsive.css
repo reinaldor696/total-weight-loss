@@ -1559,7 +1559,7 @@
         line-height: normal;
     }
     .content {
-        font-size: 2.75rem;
+        font-size: 2.75rem !important;
     }
     .marquee {
         height: 60px;
