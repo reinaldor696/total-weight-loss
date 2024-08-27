@@ -237,6 +237,10 @@
     .shop-wrap {
         flex-direction: column;
     }
+    #book-cover {
+        height: auto !important;
+        width: 100% !important;
+    }
     .shop-column {
         min-height: unset;
     }
@@ -775,6 +779,7 @@
     }
     #mobile {
         width: 50%;
+        height: auto;
         top: 30px;
     }
     .intro-btn a {

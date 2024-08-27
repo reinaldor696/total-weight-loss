@@ -27,6 +27,11 @@ body {
     flex-grow: 0;
 }
 
+/*
+#book-cover {
+    height: auto;
+    width: 40%;
+}*/
 
 .scroll-down {
     will-change: opacity, transform;
