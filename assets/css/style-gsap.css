@@ -27,12 +27,6 @@ body {
     flex-grow: 0;
 }
 
-/*
-#book-cover {
-    height: auto;
-    width: 40%;
-}*/
-
 .scroll-down {
     will-change: opacity, transform;
 }
@@ -191,6 +185,20 @@ h2.get-clients {
     display: flex;
 }
 
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 250px;
+    overflow: hidden;
+    bottom: -54px;
+    top: unset;
+}
+
+.ceo-inner .row {
+    align-items: unset !important;
+}
+
 .ceo-img {
     scale: 1 !important;
 }
@@ -302,12 +310,23 @@ form.contact-form {
 }
 
 .content {
-    font-size: 6rem !important;
+    position: relative;
+    top: calc(60 / 1080 * 100vh);
+    font-size: 4.5rem !important;
+}
+
+.accordion-body {
+    padding: 1rem 18.25rem 1rem 0rem !important;
 }
 
 .marquee-about-us {
     display: flex;
     align-items: flex-end;
+    bottom: 0 !important;
+}
+
+.ceo-name-animation {
+    top: 0 !important;
 }
 
 .about-us-banner h6 {
@@ -343,6 +362,40 @@ form.contact-form {
 }
 .product-nav::-webkit-scrollbar {
     display: none;
+}
+
+.product-carousal {
+    position: relative;
+}
+
+.arrow-prod-carousal {
+    width: 3.25rem !important;
+    height: 3.25rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute !important;
+    top: 5% !important;
+    left: 1% !important;
+    opacity: 1 !important;
+    z-index: 999 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-prod-carousal {
+    width: 3.25rem !important;
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 3.25rem;
+    position: absolute !important;
+    top: 5% !important;
+    left: 10% !important;
+    opacity: 1 !important;
+    z-index: 999 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
 /* App */

@@ -118,8 +118,8 @@ if (window.matchMedia("(min-width: 1025px)").matches) {
             delay: 0.5,
             scrollTrigger: {
                 trigger: '.mobile-right',
-                start: 'top 38%',
-                end: 'center 38%',
+                start: 'top 17%',
+                end: 'center 17%',
                 scrub: true
             }
         });

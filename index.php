@@ -265,7 +265,7 @@ $title = "Home";
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                      <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        A COLLECT OF 7 TOTAL EBOOKS DESIGNED BY WEIGHT LOSS EXPERT AND MEDICAL STUDENT, JOHNNY HADAC. EXPLORE OVER 200 NUTRITIOUS LOW-CALORIE, HIGH PROTEIN RECIPES, ALONGSIDE EXPERT NUTRITION GUIDES AND PROVEN METABOLISM-BOOSTING STRATEGIES.
                      </div>
                   </div>
                </div>
@@ -277,7 +277,7 @@ $title = "Home";
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                      <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellat nihil praesentium incidunt porro nesciunt pariatur sequi reprehenderit magni quod a quam, accusantium omnis quisquam, consequatur aspernatur ea suscipit officia!
                      </div>
                   </div>
                </div>
@@ -289,7 +289,7 @@ $title = "Home";
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, id ad eius repellat iusto, aut et perspiciatis qui illum quibusdam, minus soluta eligendi! Saepe dolor nemo est facilis blanditiis fuga?
                      </div>
                   </div>
                </div>
@@ -301,7 +301,7 @@ $title = "Home";
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta quisquam impedit provident repudiandae beatae a facere natus. Dignissimos illo soluta odio exercitationem voluptas? At, illum ad? Voluptas, aliquid illo?
                      </div>
                   </div>
                </div>

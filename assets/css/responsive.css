@@ -857,6 +857,10 @@
         display: block;
         margin-top: 50px;
     }
+    #book-cover {
+        height: auto !important;
+        width: 100% !important;
+    }
     li.nav-item.mobilelogo {
         display: block;
     }
@@ -883,7 +887,7 @@
         margin: 80% auto 0 auto;
     }
     #mobile {
-        top: -228px;
+        top: auto;
         width: 50%;
         height: auto;
     }
@@ -1200,46 +1204,6 @@
 
     /* Internal Pages */
 
-    /* cook book pendiente**** 
-    .slick-track {
-        display: flex;
-        flex-direction: row;
-    }
-    .prd-wraping {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .product-nav {
-        height: auto;
-        max-width: 100%;
-    }
-        
-
-    .prdthumb-nav {
-        max-width: 100%;
-        height: unset;
-        margin: 15px 5px;
-    }
-
-    .product-nav {
-        height: unset;
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .product-thumb-single {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .product-nav {
-        max-width: 70%;
-    }
-    .prd-wraping {
-        left: 9%;
-        position: relative;
-    }
-    */
-
     /* Term of services */
 
     .counting-list h6 {
@@ -1431,6 +1395,22 @@
         display: flex;
         flex-direction: column-reverse;
     }
+    .arrow-prod-carousal {
+        width: 2rem !important;
+        height: 2rem;
+    }
+    .arrow-prod-carousal svg {
+        height: auto;
+        width: 50%;
+    }
+    .search-prod-carousal {
+        width: 2rem !important;
+        height: 2rem;
+    }
+    .search-prod-carousal svg { 
+        height: auto;
+        width: 50%;
+    }
 }
 
 @media  screen and (max-width: 480px){
@@ -1527,6 +1507,10 @@
         top: 90px;
         right: -5%;
         left: unset;
+    }
+    #book-cover {
+        height: auto !important;
+        width: 100% !important;
     }
     img.img-fluid.banner-2 {
         right: -120px;
@@ -2100,6 +2084,22 @@
     }
     .add-rev-btn {
         margin-top: 20px;
+    }
+    .arrow-prod-carousal {
+        width: 1.5rem !important;
+        height: 1.5rem;
+    }
+    .arrow-prod-carousal svg {
+        height: auto;
+        width: 50%;
+    }
+    .search-prod-carousal {
+        width: 1.5rem !important;
+        height: 1.5rem;
+    }
+    .search-prod-carousal svg { 
+        height: auto;
+        width: 50%;
     }
 }
 
