@@ -155,7 +155,7 @@ $title = "Download Total Weight Loss App";
 <!-- End Detail Product Section !-->
 <!-- Product Reviews Section !-->
 <section class="product-review-sec">
-    <div class="container-fluid px-5 product-rew-cont">
+    <div id='product-review-secid' class="container-fluid px-5 product-rew-cont">
         <div class="row reiviews-top">
             <div class="col-lg-6">
                 <div class="reviews-heading">
@@ -340,7 +340,7 @@ $title = "Download Total Weight Loss App";
                 </div>
             </div>
         </div>
-        <div class="customer-reviews">
+        <div id='customer-reviews-page' class="customer-reviews">
             <div class="row">
                 <div class="col-lg-6">
                     <ul class="dd-filters">
@@ -503,11 +503,11 @@ $title = "Download Total Weight Loss App";
         </div>
 
         <ul class="pagination">
-            <li><a href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li class=""><a href="#">2</a></li>
-            <li class=""><a href="#">3</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="#customer-reviews-page"><i class="fa-solid fa-chevron-left"></i></a></li>
+            <li class="active"><a href="#customer-reviews-page">1</a></li>
+            <li class=""><a href="#customer-reviews-page">2</a></li>
+            <li class=""><a href="#customer-reviews-page">3</a></li>
+            <li><a href="#customer-reviews-page"><i class="fa-solid fa-chevron-right"></i></a></li>
         </ul>
 
     </div>

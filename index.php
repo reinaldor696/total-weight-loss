@@ -71,7 +71,7 @@ $title = "Home";
 </section>
 <!-- End Book Introduction Banner !-->
 <!-- Make It Simple !-->
-<section class="makeitsimple">
+<section id='makeitsimple-anit' class="makeitsimple">
    <div class="marquee">
       <div class="track">
          <div class="content">&nbsp;make it simple • make it simple • make it simple • make it simple</div>

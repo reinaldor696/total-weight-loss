@@ -339,7 +339,7 @@ $title = "Download Total Weight Loss App";
                 </div>
             </div>
         </div>
-        <div class="customer-reviews">
+        <div id='customer-reviews-app' class="customer-reviews">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
                     <ul class="dd-filters">
@@ -502,11 +502,11 @@ $title = "Download Total Weight Loss App";
         </div>
 
         <ul class="pagination">
-            <li><a href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li class=""><a href="#">2</a></li>
-            <li class=""><a href="#">3</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="#customer-reviews-app"><i class="fa-solid fa-chevron-left"></i></a></li>
+            <li class="active"><a href="#customer-reviews-app">1</a></li>
+            <li class=""><a href="#customer-reviews-app">2</a></li>
+            <li class=""><a href="#customer-reviews-app">3</a></li>
+            <li><a href="#customer-reviews-app"><i class="fa-solid fa-chevron-right"></i></a></li>
         </ul>
 
     </div>

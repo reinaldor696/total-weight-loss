@@ -1415,6 +1415,9 @@
 
 @media  screen and (max-width: 480px){
      /* menu */
+    .navBar-color-mobile { 
+        display: none;
+    }
     #navbarTogglerDemo03 {
         width: 100%;
         height: 100vh;

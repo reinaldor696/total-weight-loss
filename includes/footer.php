@@ -104,7 +104,7 @@
 <script src="assets/js/internal-pages-animation.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/header-scroll.js"></script>
-
+<script src="assets/js/header-color.js"></script>
 </body>
 
 </html>

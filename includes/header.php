@@ -33,12 +33,20 @@
                 <nav id="navbar-id" class="navbar navbar-expand-lg navbar-light">
 
                     <a class="navbar-brand" href="index.php">
-                        <img src="assets/images/newlogo 1.png" class="img-fluid" id="img-logo-header" alt="Logo" />
-                        <img src="assets/images/newlogo 2.png" class="img-fluid" id="text-logo-header" alt="Logo" />
+                        <div class='bluelogo'>
+                            <img src="assets/images/newlogo 1.svg" class="img-fluid" id="img-logo-header" alt="Logo" />
+                            <img src="assets/images/newlogo 2.svg" class="img-fluid" id="text-logo-header" alt="Logo" />
+                        </div>
+
+                        <div class='whitelogo'>
+                            <img src="assets/images/newlogo 1-1.svg" class="img-fluid" id="img-logo-header" alt="Logo" />
+                            <img src="assets/images/newlogo 2-2.svg" class="img-fluid" id="text-logo-header" alt="Logo" />
+                        </div>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                        <img class="img-fluid toogleimg" src="assets/images/toggle.webp" alt="image" />
+                        <img class="img-fluid toogleimg navBar-color-mobile-white" src="assets/images/Frame-white.png" alt="image" />
+                        <img class="img-fluid toogleimg navBar-color-mobile" src="assets/images/Frame.png" alt="image" />
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">

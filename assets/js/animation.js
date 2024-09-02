@@ -90,9 +90,9 @@ if (window.matchMedia("(min-width: 1025px)").matches) {
             }, 
             scrollTrigger: {
                 trigger: '.mobile-img',
-                start: 'top 35%',
-                end: '1430 35%',
-                scrub: 2, 
+                start: 'top 60%',
+                end: '1430 60%',
+                scrub: true, 
             }
         });
 

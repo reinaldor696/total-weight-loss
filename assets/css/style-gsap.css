@@ -13,6 +13,30 @@ body {
     margin-left: 20%;
 }
 
+.navBarColor.active {
+    color: #171717;
+    border-color: #000 !important;
+}
+.navBarColor.inactive {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.blueLogo.active {
+    display: block;
+}
+.bluelogo.inactive {
+    display: none;
+}
+
+.whiteLogo.inactive {
+    display: none;
+}
+
+.bluelogo{
+    display: none;
+}
+
 .navbar-brand {
     width: 20%;
 }

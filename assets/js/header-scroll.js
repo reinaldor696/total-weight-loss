@@ -8,7 +8,7 @@ const headerContainer = document.querySelector('header');
     let curDirection = 0;
 
     ScrollTrigger.create({
-        trigger: 'body',
+        trigger: "body",
         start: "5% top",
         end: "bottom top",
         onUpdate: (self) => {
@@ -28,11 +28,23 @@ const headerContainer = document.querySelector('header');
         }
     });
 
+    let hideHeaderTimeout;
+
     function toggleHeader(direction) {
         if (direction === 2) {
-            gsap.to(headerContainer, { duration: 1, y: '-200%'});
+            if (hideHeaderTimeout) { // if scrolling down, clear the timeout
+                clearTimeout(hideHeaderTimeout);
+            }
+            hideHeaderTimeout = setTimeout(() => { // hide the header after 1000ms
+                gsap.to(headerContainer, { duration: 1, y: '-200%' });
+            }, 1000); // 1000ms delay
         } else {
-            gsap.to(headerContainer, { duration: 1, y: '0', delay: 1.5 });
+            if (hideHeaderTimeout) { // if scrolling up, clear the timeout
+                clearTimeout(hideHeaderTimeout);
+            }
+            hideHeaderTimeout = setTimeout(() => { // show the header after 1500ms
+                gsap.to(headerContainer, { duration: 1, y: '0' });
+            }, 100); //100ms delay
         }
     }
 })();
